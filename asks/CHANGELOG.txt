@@ -1,2 +1,2 @@
 v1.0.0
-- Initiated Git
+- Initiated changelog file for frontend.
