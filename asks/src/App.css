@@ -1,17 +1,82 @@
-.development {
+/* index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* app.css */
+.home-development {
   background-color: #2a9d9025;
   padding: 0px 30px;
   height: 33.3vh;
 }
 
-.designing {
+.home-designing {
   background-color: #3df15525;
   padding: 0px 30px;
   height: 33.3vh;
 }
 
-.marketing {
+.home-marketing {
   background-color: #ebee2625;
   padding: 0px 30px;
   height: 33.3vh;
 }
+
+
+#home-animate-text1,
+#home-animate-text2,
+#home-animate-text3 {
+  margin: 0;
+  padding-top: 13vh;
+  font-size: 50px;
+  transition: font-size 1s, padding-top 1s, color 1s;
+}
+
+#home-animate-text2 {
+  text-align: right;
+}
+
+/* hover: font change */
+.home-development:hover #home-animate-text1,
+.home-designing:hover #home-animate-text2,
+.home-marketing:hover #home-animate-text3 {
+  font-size: 200px;
+  padding-top: 0vh;
+  color: rgba(0, 0, 0, 0.04);
+  transition: font-size 2s, padding-top 2s, color 1s;
+}
+
+
+/* hover on development */
+.home-development:hover~.home-designing,
+.home-development:hover~.home-marketing {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* hover on designing */
+.home-designing:hover~.home-development,
+.home-designing:hover~.home-marketing {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* hover on marketing */
+.home-marketing:hover~.home-designing,
+.home-marketing:hover~.home-marketing {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0.1);
+}
+

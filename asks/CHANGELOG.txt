@@ -1,2 +1,8 @@
 v1.0.0
 - Initiated changelog file for frontend.
+
+v1.0.1
+- Started work on homepage.
+- Added divs for development, design, marketing
+- Added transitions on fonts, divs
+- left: overlay on before

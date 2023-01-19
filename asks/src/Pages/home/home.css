@@ -1,0 +1,35 @@
+.development {
+    background-color: #2a9d9025;
+    padding: 0px 30px;
+    height: 33.3vh;
+}
+
+.designing {
+    background-color: #3df15525;
+    padding: 0px 30px;
+    height: 33.3vh;
+}
+
+.marketing {
+    background-color: #ebee2625;
+    padding: 0px 30px;
+    height: 33.3vh;
+}
+
+
+#myDIV {
+    border: 1px solid black;
+    width: 400px;
+    height: 100px;
+}
+
+#myDIV:hover {
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    100% {
+        font-size: 40px;
+    }
+}
