@@ -1,0 +1,49 @@
+.nav-cpt {
+  padding: 100px 5px 20px 5px;
+  border-radius: 50px;
+  background-color: yellowgreen;
+  text-align: center;
+  margin: auto;
+  width: 100px;
+  font-weight: 800;
+  font-size: 20px;
+  position: relative;
+  top: -88px;
+}
+
+.nav-a {
+  color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 48.8vw;
+  z-index: -1;
+  transition: left 0.1s, top 0.1s "z-index" 1000s ease-in-out;
+  transition-delay: 1000s;
+}
+
+.nav-a:hover {
+  /* color: red !important;` */
+}
+
+.nav-cpt:hover ~ .nav-a.cpt {
+  color: black;
+  left: 41vw;
+  transition: left 0.1s ease-in-out;
+}
+.nav-cpt:hover ~ .nav-a.cpd {
+  color: black;
+  top: 80px;
+  transition: top 0.1s ease-in-out;
+}
+.nav-cpt:hover ~ .nav-a.cpm {
+  color: black;
+  left: 57vw;
+  /* right: 41vw; */
+  transition: left 0.1s ease-in-out;
+}
+.nav-cpt:hover ~ .nav-a.cpt,
+.nav-cpt:hover ~ .nav-a.cpd,
+.nav-cpt:hover ~ .nav-a.cpm {
+  z-index: 1;
+}
