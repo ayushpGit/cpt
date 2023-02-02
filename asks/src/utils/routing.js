@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // importing pages
-import Nav from "../Pages/nav/nav";
-import Home from "../Pages/home/home";
+// import Nav from "../pages/nav/nav";
+import Home from "../pages/home/home";
 
 const Routing = () => {
   const path = window.location.pathname;
@@ -14,7 +14,7 @@ const Routing = () => {
           <div className="row">
             <Routes>
               {/* home route */}
-              <Route exact path="/nav" element={<Nav />} />
+              {/* <Route exact path="/nav" element={<Nav />} /> */}
               <Route exact path="/" element={<Home />} />
 
               {/* default routes for invalid links */}
