@@ -1,0 +1,21 @@
+.nav-crocus {
+    position: relative;
+    left: 45px;
+    top: 42px;
+    font-size: 35px;
+    font-weight: 275;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+  .nav-tech {
+    position: relative;
+    left: 49px;
+    top: 38px;
+    font-size: 15.4px;
+    font-weight: 275;
+    line-height: 17px;
+    letter-spacing: 0.72em;
+    text-align: left;
+  }
+  

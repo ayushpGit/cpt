@@ -1,7 +1,22 @@
+@font-face {
+  font-family: "graphik";
+  src: url(/src/assets/font/GraphikLight.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "graphik-reg";
+  src: url(/src/assets/font/GraphikRegular.otf) format("opentype");
+}
+
 /* app.css */
 
-.App {
+/* .App {
   overflow: hidden;
+} */
+
+body {
+  font-family: graphik;
+  overflow-x: hidden;
 }
 
 ::selection {

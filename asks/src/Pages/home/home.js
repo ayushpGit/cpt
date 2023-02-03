@@ -1,12 +1,20 @@
 import "./home.css";
+import Nav from "../../components/nav/nav";
 
 const home = () => {
   return (
     <>
-      <nav>
-        <span>Crocus Pearl</span>
-        <span>Technologies</span>
-      </nav>
+      <Nav />
+      {/* section 1 */}
+      <div className="">
+        <span className="home-title">
+          empower
+          <br />
+          your business
+          <br />
+          with our digital solutions
+        </span>
+      </div>
     </>
   );
 };

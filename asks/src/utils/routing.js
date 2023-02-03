@@ -10,18 +10,14 @@ const Routing = () => {
     <Router>
       {/* body: */}
       <div className="body">
-        <div className="container">
-          <div className="row">
-            <Routes>
-              {/* home route */}
-              {/* <Route exact path="/nav" element={<Nav />} /> */}
-              <Route exact path="/" element={<Home />} />
+        <Routes>
+          {/* home route */}
+          {/* <Route exact path="/nav" element={<Nav />} /> */}
+          <Route exact path="/" element={<Home />} />
 
-              {/* default routes for invalid links */}
-              {/* <Route path="*" element={<NotFound />} /> */}
-            </Routes>
-          </div>
-        </div>
+          {/* default routes for invalid links */}
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Routes>
       </div>
     </Router>
   );
