@@ -6,7 +6,7 @@ const home = () => {
     <>
       <Nav />
       {/* section 1 */}
-      <div className="">
+      <section id="top" className="container">
         <span className="home-title">
           empower
           <br />
@@ -14,7 +14,15 @@ const home = () => {
           <br />
           with our digital solutions
         </span>
-      </div>
+        <div className="row link-div">
+          <div className="col-md-6 text-center">
+            <a href="#!" className="link-button">digital portfolio</a>
+          </div>
+          <div className="col-md-6 text-center">
+            <a href="#!" className="link-button dig-home">contact us</a>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
