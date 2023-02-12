@@ -21,6 +21,7 @@
 
 body {
   font-family: graphik;
+  font-size: 20px;
   overflow-x: hidden;
 }
 
@@ -31,7 +32,6 @@ body {
 }
 
 .link-button {
-  font-size: 20px;
   /* font-weight: 300; */
   line-height: 22px;
   letter-spacing: 0.04em;

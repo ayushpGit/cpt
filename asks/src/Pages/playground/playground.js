@@ -1,53 +1,109 @@
-import React from "react";
+import HorizontalScroll from "react-horizontal-scrolling";
 
-const HorizontalScroll = () => {
+const playground = () => {
   return (
-    <div className="horizontal-scroll-container">
-      <div className="section">
-        <div className="scroll-div">
-          <div className="horizontal-scroll">
-            {/* Your scrollable content for the first div in section 1 goes here */}
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          </div>
-        </div>
-        <div className="scroll-div">
-          <div className="horizontal-scroll">
-            {/* Your scrollable content for the second div in section 1 goes here */}
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-
-          </div>
-        </div>
-      </div>
-      <div className="section">
-        <div className="scroll-div">
-          <div className="horizontal-scroll">
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            {/* Your scrollable content for the first div in section 2 goes here */}
-          </div>
-        </div>
-        <div className="scroll-div">
-          <div className="horizontal-scroll">
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            {/* Your scrollable content for the second div in section 2 goes here */}
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+    <h1>HELLO</h1>
+    <HorizontalScroll>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+      <div>aaaaaaaaaa</div>
+    </HorizontalScroll>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    </>
   );
 };
 
-export default HorizontalScroll;
+export default playground;
