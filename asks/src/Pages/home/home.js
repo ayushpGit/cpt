@@ -1,6 +1,7 @@
 import "./home.css";
 import Nav from "../../components/nav/nav";
-import { Carousel } from "@trendyol-js/react-carousel";
+// import { Carousel } from "@trendyol-js/react-carousel";
+import Carousel from "../../components/carousel/carousel";
 
 const home = () => {
   return (
@@ -29,8 +30,9 @@ const home = () => {
         </div>
       </section>
       <section id="services" className="mx-auto">
+        <Carousel />
         {/* <HorizontalScroll> */}
-        <Carousel show={1.4} swiping={true}>
+        {/* <Carousel show={1.4} swiping={true}>
           <div className="home-service-div">
             <img
               className="home-service-img"
@@ -94,7 +96,7 @@ const home = () => {
               </div>
             </div>
           </div>
-        </Carousel>
+        </Carousel> */}
         {/* </HorizontalScroll> */}
       </section>
     </>
