@@ -1,6 +1,6 @@
 import "./home.css";
 import Nav from "../../components/nav/nav";
-import HorizontalScroll from "react-horizontal-scrolling";
+import { Carousel } from "@trendyol-js/react-carousel";
 
 const home = () => {
   return (
@@ -29,7 +29,8 @@ const home = () => {
         </div>
       </section>
       <section id="services" className="mx-auto">
-        <HorizontalScroll>
+        {/* <HorizontalScroll> */}
+        <Carousel show={1.4} swiping={true}>
           <div className="home-service-div">
             <img
               className="home-service-img"
@@ -41,7 +42,7 @@ const home = () => {
                 <div className="col-md-1"></div>
                 <div className="col-md-1 home-service-num">01</div>
                 <div className="col-md-4">
-                  <h2 className="link-button">Digital Marketing</h2>
+                  <h2 className="service-title">&lt;Digital Marketing&gt;</h2>
                   <p>
                     we help individuals understand the effectiveness of their
                     marketing campaigns, allowing them to make data-driven
@@ -62,7 +63,7 @@ const home = () => {
                 <div className="col-md-1"></div>
                 <div className="col-md-1 home-service-num">02</div>
                 <div className="col-md-4">
-                  <h2 className="link-button">Website Development</h2>
+                  <h2 className="service-title">&lt;Website Development&gt;</h2>
                   <p>
                     we help individuals understand the effectiveness of their
                     marketing campaigns, allowing them to make data-driven
@@ -81,9 +82,9 @@ const home = () => {
             <div className="container-fluid">
               <div className="row ">
                 <div className="col-md-1"></div>
-                <div className="col-md-1 home-service-num">01</div>
+                <div className="col-md-1 home-service-num">03</div>
                 <div className="col-md-4">
-                  <h2 className="link-button">Digital Marketing</h2>
+                  <h2 className="service-title">&lt;Digital Marketing&gt;</h2>
                   <p>
                     we help individuals understand the effectiveness of their
                     marketing campaigns, allowing them to make data-driven
@@ -93,7 +94,8 @@ const home = () => {
               </div>
             </div>
           </div>
-        </HorizontalScroll>
+        </Carousel>
+        {/* </HorizontalScroll> */}
       </section>
     </>
   );
