@@ -23,3 +23,6 @@ v1.1.1
 - added horizontal scroll: fail
 - dont like: npm i react react-dom @trendyol-js/react-carousel --save 
 - npm install react-slick slick-carousel react-icons
+
+
+https://blog.logrocket.com/create-carousel-react-slick/

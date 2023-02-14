@@ -23,7 +23,7 @@ const home = () => {
             </a>
           </div>
           <div className="col-md-6 text-center">
-            <a href="#!" className="link-button">
+              <a href="#!" className="link-button">
               contact us
             </a>
           </div>
