@@ -1,0 +1,25 @@
+/* ------------ HOME ------------ */
+
+.home-title {
+  font-family: "graphik-light";
+  font-size: 78px;
+  line-height: 100px;
+  display: table;
+  margin: auto;
+  margin-top: 39vh;
+}
+
+.link-div {
+  margin-top: 16vh;
+  /* text-align: center; */
+}
+
+/* .dig-home{
+  position: relative;
+  left: -2vw;
+} */
+
+#services {
+  margin-top: 120px;
+}
+

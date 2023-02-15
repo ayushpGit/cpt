@@ -1,7 +1,7 @@
-import "./home.css";
-import Nav from "../../components/nav/nav";
+import "./pages-style.css";
+import Nav from "../components/nav/nav";
 // import { Carousel } from "@trendyol-js/react-carousel";
-import Carousel from "../../components/carousel/carousel";
+import Carousel from "../components/carousel";
 
 const home = () => {
   return (

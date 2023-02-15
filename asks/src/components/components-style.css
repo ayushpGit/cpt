@@ -1,0 +1,53 @@
+/* -----------Carousel--------------- */
+
+.carousel-div {
+  /* width: 60vw; */
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+.carousel-img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 110px;
+}
+
+.carousel-num {
+  margin-top: 10px;
+}
+
+.service-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 49px;
+}
+
+/* for sliding thingy: faded bg*/
+.carousel-div {
+  /* background-color: rgb(7, 70, 70); */
+  color: rgba(0, 0, 0, 0.301);
+  margin: 15px;
+  margin-top: 10vh;
+  outline-width: 0;
+}
+.slick-slide.slick-active.slick-center.slick-current .carousel-div {
+  /* background-color: rgb(85, 0, 0) !important; */
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-top: 0vh;
+}
+
+/* img size, margin */
+.slick-slide.slick-active.slick-center.slick-current
+  .carousel-div
+  .carousel-img {
+  opacity: 1;
+  height: 55vh;
+}
+
+.carousel-div .carousel-img {
+  opacity: 0.5;
+  height: 40vh;
+}

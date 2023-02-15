@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // importing pages
 // import Nav from "../pages/nav/nav";
-import Home from "../pages/home/home";
+import Home from "../pages/home";
 import Play from "../pages/playground/playground";
 
 const Routing = () => {

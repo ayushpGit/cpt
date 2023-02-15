@@ -1,5 +1,27 @@
-.horizontal-scroll {
-    overflow-x: scroll;
-    width: 500px;
-    white-space: nowrap;
-  }
+/* .horizontal-scroll {
+  overflow-x: scroll;
+  width: 500px;
+  white-space: nowrap;
+} */
+
+.carousel-div {
+  /* background-color: rgb(7, 70, 70); */
+  color: rgba(0, 0, 0, 0.301);
+  margin: 15px;
+  margin-top: 10vh;
+}
+.slick-slide.slick-active.slick-center.slick-current .carousel-div .carousel-img {
+  opacity: 1;
+  height: 55vh;
+}
+
+.carousel-div .carousel-img {
+  opacity: 0.5;
+  height: 40vh;
+}
+.slick-slide.slick-active.slick-center.slick-current .carousel-div {
+  /* background-color: rgb(85, 0, 0) !important; */
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-top: 0vh;
+}
