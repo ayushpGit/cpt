@@ -1,3 +1,26 @@
+/* ---------------Nav--------------- */
+
+.nav-crocus {
+  position: relative;
+  left: 45px;
+  top: 42px;
+  font-size: 35px;
+  font-weight: 275;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.nav-tech {
+  position: relative;
+  left: 49px;
+  top: 38px;
+  font-size: 15.4px;
+  font-weight: 275;
+  line-height: 17px;
+  letter-spacing: 0.72em;
+  text-align: left;
+}
+
 /* ---------------Carousel--------------- */
 
 .carousel-div {
@@ -63,4 +86,27 @@
 /* spacing */
 .slick-list {
   padding: 0px 64px 0px 36px !important;
+}
+
+/* ---------------Footer--------------- */
+.footer-div-top {
+  padding: 53vh 10vw 35vh 10vw;
+}
+
+.footer-div-top h1 {
+  font-size: 100px;
+  font-family: graphik-light;
+  line-height: 120px;
+}
+
+.footer-row-middle{
+  padding: 20px 0;
+}
+
+.footer-div-bottom {
+  padding: 0 0 0 10vw;
+}
+
+.footer-row-bottom{
+  margin: 15px calc(-.5 * var(--bs-gutter-x));
 }

@@ -31,7 +31,8 @@ body {
   font-size: 50px;
 }
 
-.link-button {
+.link-button,
+a {
   /* font-weight: 300; */
   line-height: 22px;
   letter-spacing: 0.04em;
@@ -42,8 +43,11 @@ body {
   padding-top: 12px;
 }
 
-.link-button:hover, .link-button:focus {
-  color: #000;
+.link-button:hover,
+.link-button:focus,
+a:hover,
+a:focus {
+  color: #5e5e5e;
   text-decoration: none;
 }
 
@@ -55,4 +59,9 @@ body {
 }
 .link-button::after {
   content: ">";
+}
+
+.font-bold {
+  font-family: graphik-reg;
+  font-weight: 900;
 }
