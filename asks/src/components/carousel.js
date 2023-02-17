@@ -10,7 +10,7 @@ export default function Carousel() {
     arrows: false,
     className: "center",
     centerMode: true,
-    infinite: true,
+    infinite: false,
     // centerPadding: "100px",
     slidesToShow: 1,
     speed: 500,
