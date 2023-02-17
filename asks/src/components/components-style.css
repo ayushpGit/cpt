@@ -1,4 +1,4 @@
-/* -----------Carousel--------------- */
+/* ---------------Carousel--------------- */
 
 .carousel-div {
   /* width: 60vw; */
@@ -24,30 +24,43 @@
   font-size: 49px;
 }
 
-/* for sliding thingy: faded bg*/
+/* for sliding thingy*/
 .carousel-div {
-  /* background-color: rgb(7, 70, 70); */
-  color: rgba(0, 0, 0, 0.301);
   margin: 15px;
   margin-top: 10vh;
   outline-width: 0;
+  transition: margin-top 1s;
 }
 .slick-slide.slick-active.slick-center.slick-current .carousel-div {
-  /* background-color: rgb(85, 0, 0) !important; */
-  color: rgb(0, 0, 0);
   padding: 20px;
   margin-top: 0vh;
+  transition: margin-top 1s;
 }
 
-/* img size, margin */
+/* img size */
 .slick-slide.slick-active.slick-center.slick-current
   .carousel-div
   .carousel-img {
-  opacity: 1;
   height: 55vh;
+  transition: height 1s;
+}
+.carousel-div .carousel-img {
+  height: 40vh;
+  transition: height 1s;
 }
 
-.carousel-div .carousel-img {
+/* faded bg */
+.slick-slide {
   opacity: 0.5;
-  height: 40vh;
+  transition: opacity 800ms cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.slick-slide.slick-center {
+  opacity: 1;
+  cursor: -webkit-grab;
+}
+
+/* spacing */
+.slick-list {
+  padding: 0px 64px 0px 36px !important;
 }

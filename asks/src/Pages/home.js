@@ -23,7 +23,7 @@ const home = () => {
             </a>
           </div>
           <div className="col-md-6 text-center">
-              <a href="#!" className="link-button">
+            <a href="#!" className="link-button">
               contact us
             </a>
           </div>
@@ -33,7 +33,15 @@ const home = () => {
         <Carousel />
       </section>
       <section id="mission">
-        <img src={require("../assets/images/img.jpg")} alt="" className="bgimg"/>
+        <img
+          src={require("../assets/images/img.jpg")}
+          alt=""
+          className="bgimg"
+        />
+        <p>&lt;mission&gt;</p>
+        <h2 style={{fontSize : "69px"}}>
+          to make technology <br></br>an investment for your business <br></br>in this digital era
+        </h2>
       </section>
     </>
   );

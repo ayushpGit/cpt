@@ -1,9 +1,10 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./components-style.css";
+
 export default function Carousel() {
   const settings = {
     arrows: false,
@@ -14,10 +15,50 @@ export default function Carousel() {
     slidesToShow: 1,
     speed: 500,
   };
+
+  const services = [
+    {
+      num: "01",
+      title: "Digital Marketing",
+      desc: "we help individuals understand the effectiveness of their marketing campaigns, allowing them to make data-driven decisions",
+      img: "img",
+    },
+    {
+      num: "02",
+      title: "Website Development",
+      desc: "we help in creating beautiful websites with excellent user experience while also catering to all age groups and target audience",
+      img: "img",
+    },
+    {
+      num: "03",
+      title: "Printing ",
+      desc: "We print business cards, brochures, posters, and other various materials as per the requirements of clients at a reasonable price. ",
+      img: "img",
+    },
+  ];
+
   return (
     <div>
       <Slider {...settings}>
-        <div className="carousel-div">
+        {services.map((service) => (
+          <div className="carousel-div">
+            <img
+              className="carousel-img"
+              src={require("../assets/images/"+ service.img +".jpg")}
+              alt="service img"
+            />
+            <div className="container-fluid">
+              <div className="row ">
+                <div className="col-md-1 carousel-num">{service.num}</div>
+                <div className="col-md-4">
+                  <h2 className="service-title">&lt;{service.title}&gt;</h2>
+                  <p>{service.desc}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        {/* <div className="carousel-div">
           <img
             className="carousel-img"
             src={require("../assets/images/img.jpg")}
@@ -37,7 +78,8 @@ export default function Carousel() {
             </div>
           </div>
         </div>
-        <div className="carousel-div hah">
+
+        <div className="carousel-div">
           <img
             className="carousel-img"
             src={require("../assets/images/img.jpg")}
@@ -57,7 +99,8 @@ export default function Carousel() {
             </div>
           </div>
         </div>
-        <div className="carousel-div hah">
+
+        <div className="carousel-div">
           <img
             className="carousel-img"
             src={require("../assets/images/img.jpg")}
@@ -76,7 +119,7 @@ export default function Carousel() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </Slider>
     </div>
   );
