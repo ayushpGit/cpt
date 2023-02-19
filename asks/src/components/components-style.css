@@ -1,9 +1,11 @@
 /* ---------------Nav--------------- */
 
 .nav-crocus {
-  position: relative;
+  padding: 45px 0px 0px 35px;
+  margin: 0;
+  /* position: relative;
   left: 45px;
-  top: 42px;
+  top: 42px; */
   font-size: 35px;
   font-weight: 275;
   line-height: 39px;
@@ -11,14 +13,37 @@
   text-align: left;
 }
 .nav-tech {
-  position: relative;
+  padding: 0px 0px 0px 38px;
+  /* position: relative;
   left: 49px;
-  top: 38px;
+  top: 38px; */
   font-size: 15.4px;
   font-weight: 275;
   line-height: 17px;
   letter-spacing: 0.72em;
   text-align: left;
+}
+
+.nav-right {
+  padding: 45px 35px 0px 0px;
+  float: right;
+  /* position: absolute;
+  top: 40px;
+  right: 40px; */
+}
+
+.nav-works{
+  font-size: 25px;
+  margin: 0px 20px;
+
+}
+
+.nav-menu {
+  font-size: 55px;
+  color: white;
+  background-color: black;
+  padding: 7px;
+  border-radius: 50px;
 }
 
 /* ---------------Carousel--------------- */
@@ -99,7 +124,7 @@
   line-height: 120px;
 }
 
-.footer-row-middle{
+.footer-row-middle {
   padding: 20px 0;
 }
 
@@ -107,6 +132,84 @@
   padding: 0 0 0 10vw;
 }
 
-.footer-row-bottom{
-  margin: 15px calc(-.5 * var(--bs-gutter-x));
+.footer-row-bottom {
+  margin: 15px calc(-0.5 * var(--bs-gutter-x));
+}
+
+
+/* try */
+
+/* Style the overlay */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Style the open button */
+.open-button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #2196f3;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.open-button:hover {
+  background: #0b7dda;
+}
+
+/* Style the "Close" button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Style search elements */
+.search-input {
+  width: 400px;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.search-button {
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+  background: #ffc107;
+  border-radius: 0px 30px 30px 0px;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background: #ff9800;
+}
+
+.search-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
 }
