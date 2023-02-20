@@ -19,12 +19,14 @@ const footer = (props) => {
         <div className="row footer-row-middle">
           <div className="col-md-5">
             {props.locationTop}
-            <br></br>{props.locationBottom}
+            <br></br>
+            {props.locationBottom}
           </div>
           <a
             href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
             className="link-button col-md-1"
             target={"_blank"}
+            rel={"noreferrer"}
           >
             facebook
           </a>
@@ -32,6 +34,7 @@ const footer = (props) => {
             href="https://www.instagram.com/crocus.pearl/"
             className="link-button col-md-2 text-center"
             target={"_blank"}
+            rel={"noreferrer"}
           >
             instagram
           </a>
@@ -39,6 +42,7 @@ const footer = (props) => {
             href="https://www.linkedin.com/company/crocus-pearl-technologies-pvt-ltd/mycompany/"
             className="link-button col-md-1 text-right"
             target={"_blank"}
+            rel={"noreferrer"}
           >
             linkedin
           </a>
