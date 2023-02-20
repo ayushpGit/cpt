@@ -32,10 +32,9 @@
   right: 40px; */
 }
 
-.nav-works{
+.nav-works {
   font-size: 25px;
   margin: 0px 20px;
-
 }
 
 .nav-menu {
@@ -44,6 +43,20 @@
   background-color: black;
   padding: 7px;
   border-radius: 50px;
+}
+
+/* ---------------Landing--------------- */
+
+.landing-video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  filter: grayscale(1) contrast(0.7);
+  opacity: 0.3;
 }
 
 /* ---------------Carousel--------------- */
@@ -136,80 +149,50 @@
   margin: 15px calc(-0.5 * var(--bs-gutter-x));
 }
 
-
 /* try */
 
 /* Style the overlay */
-.overlay {
-  height: 100%;
-  width: 0;
+/* overlay */
+
+.overlay__background {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  transition: 0.5s;
-  overflow-x: hidden;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-/* Style the open button */
-.open-button {
-  margin-top: 30px;
-  padding: 10px 30px;
-  background: #2196f3;
-  color: #fff;
   cursor: pointer;
-  border: none;
-  border-radius: 10px;
+  z-index: 9;
 }
 
-.open-button:hover {
-  background: #0b7dda;
+.overlay__container {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  padding: 30px;
+  width: fit-content;
+  height: fit-content;
 }
 
-/* Style the "Close" button */
-.close-button {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+.overlay__controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.overlay__close:after {
+  display: inline-block;
+  content: "\00d7";
+}
+
+.overlay__close {
   border: none;
-  background: transparent;
+  background-color: transparent;
+  font-size: 36px;
   cursor: pointer;
-  color: #fff;
-}
-
-/* Style search elements */
-.search-input {
-  width: 400px;
-  padding: 12px 15px;
-  border: none;
-  outline: none;
-  border-radius: 30px 0px 0px 30px;
-}
-
-.search-button {
-  padding: 12px 15px;
-  border: none;
-  cursor: pointer;
-  background: #ffc107;
-  border-radius: 0px 30px 30px 0px;
-  transition: 0.3s;
-}
-
-.search-button:hover {
-  background: #ff9800;
-}
-
-.search-text {
-  color: rgba(255, 255, 255, 0.7);
-  font-style: italic;
 }

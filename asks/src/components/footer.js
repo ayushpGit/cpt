@@ -1,6 +1,6 @@
 import React from "react";
 
-const footer = () => {
+const footer = (props) => {
   return (
     <>
       <div className="footer-div-top">
@@ -14,12 +14,12 @@ const footer = () => {
           href="mailto:projects@crocuspearl.com"
           style={{ fontSize: "27px", marginBottom: "20px" }}
         >
-          projects@crocuspearl.com
+          {props.email}
         </a>
         <div className="row footer-row-middle">
           <div className="col-md-5">
-            khusibun,
-            <br></br>kathmandu, nepal
+            {props.locationTop}
+            <br></br>{props.locationBottom}
           </div>
           <a
             href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"

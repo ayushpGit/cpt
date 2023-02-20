@@ -31,3 +31,4 @@ https://blog.logrocket.com/create-carousel-react-slick/ Works
 v1.1.2
 - added bootstrap
 - footer done
+- added video
