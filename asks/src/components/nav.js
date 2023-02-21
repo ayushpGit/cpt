@@ -29,7 +29,8 @@ const Nav = () => {
             <RxCross2 className="overlay__close" onClick={toggleOverlay} />
           </div>
           <div className="overlay__content">
-            <h1>Content in overlay</h1>
+            <h1>Contact us</h1>
+            <h1>Careers</h1>
           </div>
         </div>
       )}
