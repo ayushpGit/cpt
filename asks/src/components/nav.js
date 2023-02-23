@@ -6,41 +6,42 @@ import { useState } from "react";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOverlay = () => {
+    // console.log("Before"+isOpen);
     setIsOpen(!isOpen);
+    // console.log("After"+isOpen);
   };
-
 
   const menuItems = [
     {
       name: "Home",
-      link: "/"
+      link: "/",
     },
     {
       name: "Works",
-      link: "/"
+      link: "/",
     },
     {
       name: "Case Studies",
-      link: "/"
+      link: "/",
     },
     {
       name: "Expertise",
-      link: "/"
+      link: "/",
     },
     {
       name: "About",
-      link: "/"
+      link: "/",
     },
     {
       name: "Contact",
-      link: "/"
+      link: "/",
     },
   ];
   return (
     <>
       <nav>
         <div className="col-md-6">
-          <p className="nav-crocus">Crocus Pearl</p>
+          <p className="nav-crocus">crocus pearl</p>
           <p className="nav-tech">technologies</p>
         </div>
         <div className="nav-right">
@@ -52,7 +53,7 @@ const Nav = () => {
       </nav>
 
       {isOpen && (
-        <div className="overlay">
+        <div className={isOpen ? "overlay active" : "overlay"}>
           <div className="overlay__controls">
             <RxCross2 className="overlay__close" onClick={toggleOverlay} />
           </div>
@@ -63,50 +64,50 @@ const Nav = () => {
 
             <div className="nav-container-2">
               {menuItems.map((menuItem) => (
-                <a className="menu-items" href={menuItem.link}>{menuItem.name}</a>
+                <a className="menu-items" href={menuItem.link}>
+                  {menuItem.name}
+                </a>
               ))}
             </div>
 
             <div className="nav-container-3">
-
               <p className="nav-address sub-heading">nepal</p>
               <p className="nav-address">khusibun, kathmandu</p>
-              <a
-                href="mailto:projects@crocuspearl.com"
-                className="nav-email"
-              >
-                project@amiraliadib.com
+              <a href="mailto:projects@crocuspearl.com" className="nav-email">
+                projects@crocuspearl.com
               </a>
-              <a href="/" className="nav-privacy">Privacy Policy</a>
+              <a href="/" className="nav-privacy">
+                Privacy Policy
+              </a>
               <div className="nav-socials">
                 <p className="sub-heading">Social</p>
                 <a
                   href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
                   // className="link-button"
                   target={"_blank"}
-                  rel={"noreferrer"}>
+                  rel={"noreferrer"}
+                >
                   Facebook
                 </a>
                 <a
                   href="https://www.instagram.com/crocus.pearl/"
                   // className="link-button"
                   target={"_blank"}
-                  rel={"noreferrer"}>
+                  rel={"noreferrer"}
+                >
                   Instagram
                 </a>
                 <a
                   href="https://www.linkedin.com/company/crocus-pearl-technologies-pvt-ltd/mycompany/"
                   // className="link-button"
                   target={"_blank"}
-                  rel={"noreferrer"}>
+                  rel={"noreferrer"}
+                >
                   Linkedin
                 </a>
               </div>
             </div>
           </div>
-
-
-
         </div>
       )}
     </>
