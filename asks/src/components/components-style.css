@@ -252,8 +252,8 @@
 /* For overlay */
 
 .overlay {
-  background-color: rgba(255, 255, 255, 0);
-  position: fixed;
+  background-color: white;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -266,15 +266,9 @@
   /* transition: background-color 5s ease-in-out;
   -webkit-transition: background-color 5s ease-in-out; */
 }
-.overlay.active {
-  background-color: white;
-  /* transition: background-color 5s ease-in-out;
-  -webkit-transition: background-color 5s ease-in-out; */
-}
 
-.overlay_inside{
+.overlay_inside {
   z-index: 11;
-  
 }
 .overlay__controls {
   display: block;
@@ -290,14 +284,50 @@
   content: "\00d7";
 }
 
-/* .overlay__close {
-  font-size: 55px;
-  color: white;
-  background-color: black;
-  padding: 7px;
-  border-radius: 50px;
-  cursor: pointer;
-} */
+/* Responsive Nav */
+
+@media screen and (max-width: 990px) {
+  .nav-container-1 {
+    min-width: fit-content;
+  }
+
+  .nav-container-2 {
+    min-width: fit-content;
+    padding-right: 40px;
+  }
+
+  .nav-container-3 {
+    min-width: fit-content !important;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  .nav-container-1 {
+    display: none;
+  }
+
+  .nav-container-2 {
+    min-width: 100vw;
+  }
+
+  .nav-container-3 {
+    min-width: fit-content !important;
+  }
+  .overlay__content {
+    display: block;
+    padding-left: 40px;
+    /* justify-content: center; */
+  }
+  .overlay {
+    height: fit-content;
+  }
+}
 
 /* ---------------Menu--------------- */
 /* 
