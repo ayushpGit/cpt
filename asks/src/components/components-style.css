@@ -46,6 +46,9 @@
   padding: 7px;
   border-radius: 50px;
   cursor: pointer;
+  /* position: absolute;
+  right: 20px; */
+
 }
 
 .overlay__content {
@@ -253,7 +256,7 @@
 
 .overlay {
   background-color: white;
-  position: relative;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -271,7 +274,7 @@
   z-index: 11;
 }
 .overlay__controls {
-  display: block;
+  /* display: block; */
   padding-bottom: 10vh;
 }
 

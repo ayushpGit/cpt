@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomCursor from "custom-cursor-react";
+import { Cursor, CursorProvider } from 'custom-cursor-react';
 import "custom-cursor-react/dist/index.css";
 import "./playground.css";
 
