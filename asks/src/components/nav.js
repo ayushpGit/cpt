@@ -40,7 +40,7 @@ const Nav = () => {
   return (
     <>
       <nav>
-        <div className="col-md-6">
+        <div className="col-md-6 nav-logo">
           <p className="nav-crocus">crocus pearl</p>
           <p className="nav-tech">technologies</p>
         </div>

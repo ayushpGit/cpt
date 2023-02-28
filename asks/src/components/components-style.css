@@ -48,7 +48,6 @@
   cursor: pointer;
   /* position: absolute;
   right: 20px; */
-
 }
 
 .overlay__content {
@@ -287,6 +286,9 @@
   content: "\00d7";
 }
 
+.nav-logo{
+  float: left;
+}
 /* Responsive Nav */
 
 @media screen and (max-width: 990px) {
@@ -329,6 +331,9 @@
   }
   .overlay {
     height: fit-content;
+  }
+  .overlay__controls {
+    padding-top: 14vh;
   }
 }
 

@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CustomCursor from "custom-cursor-react";
-import { Cursor, CursorProvider } from 'custom-cursor-react';
-import "custom-cursor-react/dist/index.css";
 import "./playground.css";
 
 export default class CenterMode extends Component {
@@ -20,21 +17,6 @@ export default class CenterMode extends Component {
     };
     return (
       <div>
-        <div>
-          <CustomCursor
-            targets={[".link", ".your-css-selector", ".carousel-img"]}
-            customClass="custom-cursor"
-            dimensions={30}
-            fill="#c70000"
-            smoothness={{
-              movement: 0.2,
-              scale: 0.2,
-              opacity: 0.2,
-            }}
-            targetOpacity={0.5}
-            targetScale={8.5}
-          />
-        </div>
         <Slider {...settings}>
           <div className="carousel-div">
             <img
