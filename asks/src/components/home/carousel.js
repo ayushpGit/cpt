@@ -21,19 +21,19 @@ export default function Carousel() {
       num: "01",
       title: "digital marketing",
       desc: "we help individuals understand the effectiveness of their marketing campaigns, allowing them to make data-driven decisions",
-      img: "img",
+      img: "a",
     },
     {
       num: "02",
       title: "website development",
       desc: "we help in creating beautiful websites with excellent user experience while also catering to all age groups and target audience",
-      img: "img",
+      img: "d",
     },
     {
       num: "03",
       title: "printing",
       desc: "we print business cards, brochures, posters, and other various materials as per the requirements of clients at a reasonable price. ",
-      img: "img",
+      img: "c",
     },
   ];
 

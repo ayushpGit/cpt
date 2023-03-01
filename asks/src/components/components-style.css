@@ -158,7 +158,7 @@
   opacity: 0.3;
 }
 
-/* ---------------Carousel--------------- */
+/* ---------------Services/Carousel--------------- */
 
 .carousel-div {
   /* width: 60vw; */
@@ -172,6 +172,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 110px;
+  object-fit: cover;
 }
 
 .carousel-num {
@@ -228,9 +229,26 @@
   padding: 0px 64px 0px 36px !important;
 }
 
+/* ---------------Mission--------------- */
+
+#mission .bgimg {
+  width: 100%;
+  height: 100vh !important;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  /* opacity: 0.3; */
+}
+
+.mission-div {
+  padding: 60vh 0 0 10vw;
+  color: #ccc;
+  height: 100vh;
+}
+
 /* ---------------Footer--------------- */
 .footer-div-top {
-  padding: 53vh 10vw 35vh 10vw;
+  padding: 37vh 10vw;
 }
 
 .footer-div-top h1 {
@@ -286,7 +304,7 @@
   content: "\00d7";
 }
 
-.nav-logo{
+.nav-logo {
   float: left;
 }
 /* Responsive Nav */
@@ -450,3 +468,16 @@ label a {
   text-decoration: none;
   font-family: poppins;
 } */
+
+/* Playground */
+
+.cursor {
+  background-color: #111;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}

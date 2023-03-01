@@ -3,7 +3,7 @@ import React from "react";
 const mission = () => {
   return (
     <>
-      <img src={require("../../assets/images/img.jpg")} alt="" className="bgimg" />
+      <img src={require("../../assets/images/e.jpg")} alt="" className="bgimg" />
       <div className="mission-div">
         <p>&lt;mission&gt;</p>
         <h2 style={{ fontSize: "69px" }}>

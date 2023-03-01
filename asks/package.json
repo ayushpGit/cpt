@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@trendyol-js/react-carousel": "^3.0.2",
     "custom-cursor-react": "^1.0.5",
+    "framer-motion": "^10.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-horizontal-scrolling": "^0.1.13",

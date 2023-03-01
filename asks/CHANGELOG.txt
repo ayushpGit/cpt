@@ -34,3 +34,6 @@ v1.1.2
 - added video
 
 - added custom-cursor-react: dont think i like it
+- added pictures
+- Added framer-motion
+    npm install framer-motion
