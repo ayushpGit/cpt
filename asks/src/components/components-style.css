@@ -472,7 +472,8 @@ label a {
 /* Playground */
 
 .cursor {
-  background-color: #111;
+  background-color: #111 !important;
+  color: red;
   height: 32px;
   width: 32px;
   border-radius: 50%;
@@ -480,4 +481,13 @@ label a {
   top: 0;
   left: 0;
   pointer-events: none;
+  z-index: 200;
+}
+
+.aaa{
+  height: 100vh;
+}
+
+*{
+  cursor: none;
 }
