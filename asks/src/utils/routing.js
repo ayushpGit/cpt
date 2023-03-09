@@ -53,16 +53,6 @@ const Routing = () => {
 
   // const dragEnter = () => setCursorVariant("text");
 
-  const dragEnter = () => {
-    console.log("ENTERED")
-    setCursorVariant("text");
-    document.querySelector(".cursor").textContent = "DRAG";
-  };
-  const dragLeave = () => {
-    setCursorVariant("default");
-    document.querySelector(".cursor").textContent = "";
-  };
-
   return (
     <Router>
       {/* body: */}
@@ -78,7 +68,7 @@ const Routing = () => {
           {/* home route */}
           <Route exact path="/nav" element={<Nav />} />
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/playground" element={<Play />} />
+          <Route exact path="/playground" element={<Play />} setCursorVariant={setCursorVariant}/>
           {/* <Route
             exact
             path="/playground"

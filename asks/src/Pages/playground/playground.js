@@ -2,10 +2,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./playground.css";
-import DragEnter from "./DragEnter";
-import DragLeave from "./DragLeave";
+// import DragEnter from "./DragEnter";
+// import DragLeave from "./DragLeave";
 
-const Playground = ({enter, leave}) => {
+const Playground = (setCursorVariant) => {
   // Slideeeeeeeeeeeee things
   const settings = {
     arrows: false,
@@ -38,10 +38,19 @@ const Playground = ({enter, leave}) => {
     },
   ];
 
+  const dragEnter = () => {
+    console.log("ENTERED");
+    setCursorVariant("text");
+    document.querySelector(".cursor").textContent = "DRAG";
+  };
+  const dragLeave = () => {
+    setCursorVariant("default");
+    document.querySelector(".cursor").textContent = "";
+  };
+
   return (
     <div>
-
-      <div onMouseEnter={DragEnter} onMouseLeave={DragLeave}>
+      <div onMouseEnter={dragEnter} onMouseLeave={dragLeave}>
         <Slider {...settings}>
           {services.map((service) => (
             <div className="carousel-div">

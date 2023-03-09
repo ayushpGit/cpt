@@ -32,7 +32,6 @@ const DragEnter = () => {
       paddingTop: 60,
       height: 150,
       width: 150,
-      // backgroundColor: "yellow",
     },
   };
   const [cursorVariant, setCursorVariant] = useState("default");
