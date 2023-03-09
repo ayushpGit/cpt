@@ -473,7 +473,6 @@ label a {
 
 .cursor {
   background-color: #111 !important;
-  color: red;
   height: 32px;
   width: 32px;
   border-radius: 50%;
@@ -482,6 +481,9 @@ label a {
   left: 0;
   pointer-events: none;
   z-index: 200;
+  /* text of the cursor */
+  color: #ccc;
+  font-weight: 900;
 }
 
 .aaa{

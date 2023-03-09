@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./playground.css";
 
-const Playground = () => {
+const Playground = ({enter, leave}) => {
   // Slideeeeeeeeeeeee things
   const settings = {
     arrows: false,
@@ -40,13 +40,10 @@ const Playground = () => {
 
   // CURSOR THINGS__________________________________________________________
 
-  // let hi = document.querySelector(".cursor");
-
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
   });
-  // console.log(mousePosition);
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -70,16 +67,25 @@ const Playground = () => {
     text: {
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
+      padding: 50,
+      paddingTop: 60,
       height: 150,
       width: 150,
-      backgroundColor: "yellow",
-      // hi: "n",
+      // backgroundColor: "yellow",
     },
   };
   const [cursorVariant, setCursorVariant] = useState("default");
 
-  const dragEnter = () => setCursorVariant("text");
-  const dragLeave = () => setCursorVariant("default");
+  // const dragEnter = () => setCursorVariant("text");
+
+  const dragEnter = () => {
+    setCursorVariant("text");
+    document.querySelector(".cursor").textContent = "DRAG";
+  };
+  const dragLeave = () => {
+    setCursorVariant("default");
+    document.querySelector(".cursor").textContent = "";
+  };
 
   return (
     <div>
@@ -88,6 +94,7 @@ const Playground = () => {
         variants={variants}
         animate={cursorVariant}
       ></motion.div>
+
       <div onMouseEnter={dragEnter} onMouseLeave={dragLeave}>
         <Slider {...settings}>
           {services.map((service) => (
