@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 // cursor
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 // importing pages
 import Nav from "../components/nav";
@@ -15,64 +15,64 @@ const Routing = () => {
 
   // CURSOR THINGS__________________________________________________________
 
-  // const [mousePosition, setMousePosition] = useState({
-  //   x: 0,
-  //   y: 0,
-  // });
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0,
+  });
 
-  // useEffect(() => {
-  //   const mouseMove = (e) => {
-  //     // console.log(e);
-  //     setMousePosition({
-  //       x: e.clientX,
-  //       y: e.clientY,
-  //     });
-  //   };
-  //   window.addEventListener("mousemove", mouseMove);
-  //   return () => {
-  //     window.removeEventListener("mousemove", mouseMove);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const mouseMove = (e) => {
+      // console.log(e);
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      });
+    };
+    window.addEventListener("mousemove", mouseMove);
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    };
+  }, []);
 
-  // const variants = {
-  //   default: {
-  //     x: mousePosition.x - 16,
-  //     y: mousePosition.y - 16,
-  //   },
-  //   text: {
-  //     x: mousePosition.x - 75,
-  //     y: mousePosition.y - 75,
-  //     padding: 50,
-  //     paddingTop: 60,
-  //     height: 150,
-  //     width: 150,
-  //     // backgroundColor: "yellow",
-  //   },
-  // };
-  // const [cursorVariant, setCursorVariant] = useState("default");
+  const variants = {
+    default: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
+    },
+    text: {
+      x: mousePosition.x - 75,
+      y: mousePosition.y - 75,
+      padding: 50,
+      paddingTop: 60,
+      height: 150,
+      width: 150,
+      // backgroundColor: "yellow",
+    },
+  };
+  const [cursorVariant, setCursorVariant] = useState("default");
 
-  // // const dragEnter = () => setCursorVariant("text");
+  // const dragEnter = () => setCursorVariant("text");
 
-  // const dragEnter = () => {
-  //   console.log("ENTERED")
-  //   setCursorVariant("text");
-  //   document.querySelector(".cursor").textContent = "DRAG";
-  // };
-  // const dragLeave = () => {
-  //   setCursorVariant("default");
-  //   document.querySelector(".cursor").textContent = "";
-  // };
+  const dragEnter = () => {
+    console.log("ENTERED")
+    setCursorVariant("text");
+    document.querySelector(".cursor").textContent = "DRAG";
+  };
+  const dragLeave = () => {
+    setCursorVariant("default");
+    document.querySelector(".cursor").textContent = "";
+  };
 
   return (
     <Router>
       {/* body: */}
       <div className="body">
         {/* cursor */}
-        {/* <motion.div
+        <motion.div
           className="cursor"
           variants={variants}
           animate={cursorVariant}
-        ></motion.div> */}
+        ></motion.div>
 
         <Routes>
           {/* home route */}

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./playground.css";
+import DragEnter from "./DragEnter";
+import DragLeave from "./DragLeave";
 
 const Playground = ({enter, leave}) => {
   // Slideeeeeeeeeeeee things
@@ -38,64 +38,10 @@ const Playground = ({enter, leave}) => {
     },
   ];
 
-  // CURSOR THINGS__________________________________________________________
-
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-
-  useEffect(() => {
-    const mouseMove = (e) => {
-      // console.log(e);
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mousemove", mouseMove);
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
-
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-    },
-    text: {
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      padding: 50,
-      paddingTop: 60,
-      height: 150,
-      width: 150,
-      // backgroundColor: "yellow",
-    },
-  };
-  const [cursorVariant, setCursorVariant] = useState("default");
-
-  // const dragEnter = () => setCursorVariant("text");
-
-  const dragEnter = () => {
-    setCursorVariant("text");
-    document.querySelector(".cursor").textContent = "DRAG";
-  };
-  const dragLeave = () => {
-    setCursorVariant("default");
-    document.querySelector(".cursor").textContent = "";
-  };
-
   return (
     <div>
-      <motion.div
-        className="cursor"
-        variants={variants}
-        animate={cursorVariant}
-      ></motion.div>
 
-      <div onMouseEnter={dragEnter} onMouseLeave={dragLeave}>
+      <div onMouseEnter={DragEnter} onMouseLeave={DragLeave}>
         <Slider {...settings}>
           {services.map((service) => (
             <div className="carousel-div">
