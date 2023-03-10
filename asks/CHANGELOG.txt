@@ -37,3 +37,6 @@ v1.1.2
 - added pictures
 - Added framer-motion
     npm install framer-motion
+
+
+- cursor works

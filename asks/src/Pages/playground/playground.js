@@ -5,7 +5,7 @@ import "./playground.css";
 // import DragEnter from "./DragEnter";
 // import DragLeave from "./DragLeave";
 
-const Playground = (setCursorVariant) => {
+const Playground = ({ dragEnter, dragLeave }) => {
   // Slideeeeeeeeeeeee things
   const settings = {
     arrows: false,
@@ -37,16 +37,6 @@ const Playground = (setCursorVariant) => {
       img: "c",
     },
   ];
-
-  const dragEnter = () => {
-    console.log("ENTERED");
-    setCursorVariant("text");
-    document.querySelector(".cursor").textContent = "DRAG";
-  };
-  const dragLeave = () => {
-    setCursorVariant("default");
-    document.querySelector(".cursor").textContent = "";
-  };
 
   return (
     <div>

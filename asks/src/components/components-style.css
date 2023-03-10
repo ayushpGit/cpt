@@ -472,7 +472,9 @@ label a {
 /* Playground */
 
 .cursor {
-  background-color: #111 !important;
+  /* background-color: #ffffff !important; */
+  mix-blend-mode: difference;
+  border: #ffffff 1px solid;
   height: 32px;
   width: 32px;
   border-radius: 50%;
@@ -490,6 +492,6 @@ label a {
   height: 100vh;
 }
 
-*{
+/* *{
   cursor: none;
-}
+} */

@@ -6,7 +6,7 @@ import Mission from "../components/home/mission";
 import Carousel from "../components/home/carousel";
 import Footer from "../components/footer";
 
-const home = () => {
+const home = ({ dragEnter, dragLeave }) => {
   return (
     <>
       <Nav />
@@ -16,7 +16,12 @@ const home = () => {
       </section>
 
       {/* section 2 */}
-      <section id="services" className="mx-auto">
+      <section
+        id="services"
+        className="mx-auto"
+        onMouseEnter={dragEnter}
+        onMouseLeave={dragLeave}
+      >
         <Carousel />
       </section>
 
@@ -26,7 +31,7 @@ const home = () => {
       </section>
 
       {/* section 5 */}
-      <section id="Footer">
+      <section id="footer">
         <Footer
           email="projects@crocuspearl.com"
           locationTop="khusibun,"
