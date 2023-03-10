@@ -10,12 +10,13 @@ const home = ({ dragEnter, dragLeave }) => {
   return (
     <>
       <Nav />
-      {/* section 1 */}
+
+      {/* top section */}
       <section id="top" className="container">
         <Landing />
       </section>
 
-      {/* section 2 */}
+      {/* services section */}
       <section
         id="services"
         className="mx-auto"
@@ -25,12 +26,12 @@ const home = ({ dragEnter, dragLeave }) => {
         <Carousel />
       </section>
 
-      {/* section 3 */}
+      {/* mission section */}
       <section id="mission">
         <Mission />
       </section>
 
-      {/* section 5 */}
+      {/* footer section */}
       <section id="footer">
         <Footer
           email="projects@crocuspearl.com"

@@ -5,7 +5,7 @@ import "./playground.css";
 // import DragEnter from "./DragEnter";
 // import DragLeave from "./DragLeave";
 
-const Playground = ({ dragEnter, dragLeave }) => {
+const Playground = () => {
   // Slideeeeeeeeeeeee things
   const settings = {
     arrows: false,
@@ -40,28 +40,26 @@ const Playground = ({ dragEnter, dragLeave }) => {
 
   return (
     <div>
-      <div onMouseEnter={dragEnter} onMouseLeave={dragLeave}>
-        <Slider {...settings}>
-          {services.map((service) => (
-            <div className="carousel-div">
-              <img
-                className="carousel-img"
-                src={require("../../assets/images/" + service.img + ".jpg")}
-                alt="service img"
-              />
-              <div className="container-fluid">
-                <div className="row ">
-                  <div className="col-md-1 carousel-num">{service.num}</div>
-                  <div className="col-md-4">
-                    <h2 className="service-title">&lt;{service.title}&gt;</h2>
-                    <p>{service.desc}</p>
-                  </div>
+      <Slider {...settings}>
+        {services.map((service) => (
+          <div className="carousel-div">
+            <img
+              className="carousel-img"
+              src={require("../../assets/images/" + service.img + ".jpg")}
+              alt="service img"
+            />
+            <div className="container-fluid">
+              <div className="row ">
+                <div className="col-md-1 carousel-num">{service.num}</div>
+                <div className="col-md-4">
+                  <h2 className="service-title">&lt;{service.title}&gt;</h2>
+                  <p>{service.desc}</p>
                 </div>
               </div>
             </div>
-          ))}
-        </Slider>
-      </div>
+          </div>
+        ))}
+      </Slider>
       <div className="aaa">AAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</div>
     </div>
   );

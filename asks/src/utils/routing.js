@@ -80,11 +80,7 @@ const Routing = () => {
             path="/"
             element={<Home dragEnter={dragEnter} dragLeave={dragLeave} />}
           />
-          <Route
-            exact
-            path="/playground"
-            element={<Play dragEnter={dragEnter} dragLeave={dragLeave} />}
-          />
+          <Route exact path="/playground" element={<Play />} />
           <Route exact path="/foot" element={<Foot />} />
 
           {/* default routes for invalid links */}
