@@ -1,29 +1,56 @@
-/* .horizontal-scroll {
-  overflow-x: scroll;
-  width: 500px;
-  white-space: nowrap;
-} */
-
-/* .carousel-div {
-  color: rgba(0, 0, 0, 0.301);
-  margin: 15px;
-  margin-top: 10vh;
+header {
+  border-bottom: 1px solid #eee;
+  height: 4rem;
 }
-.slick-slide.slick-active.slick-center.slick-current .carousel-div .carousel-img {
-  opacity: 1;
-  height: 55vh;
+#menuu {
+  background: #333;
+  width: 50rem;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  transition-timing-function: cubic-bezier(10, 2, 3, 1);
+  transform: translateX(50rem);
+  top: 0;
+  z-index: 0;
+  transition: 0.5s;
+}
+#menuToggle {
+  display: none;
 }
 
-.carousel-div .carousel-img {
-  opacity: 0.5;
-  height: 40vh;
+#menuToggle:checked ~ #meny {
+  transform: translateX(0rem);
 }
-.slick-slide.slick-active.slick-center.slick-current .carousel-div {
-  color: rgb(0, 0, 0);
-  padding: 20px;
-  margin-top: 0vh;
-} */
 
-/* .custom-cursor{
-  padding: 20px;
-} */
+#burger {
+  position: absolute;
+  cursor: pointer;
+  width: 4rem;
+  height:3rem;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#burger > div {
+  height: 2px;
+  background-color: #000;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+#menuToggle:checked ~ #burger > div {
+  background-color: #fff;
+}
+
+#menuToggle:checked ~ #burger > div:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+}
+#menuToggle:checked ~ #burger > div:nth-child(2) {
+  opacity: 0;
+}
+#menuToggle:checked ~ #burger > div:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}

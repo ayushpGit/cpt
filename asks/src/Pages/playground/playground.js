@@ -1,68 +1,125 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./playground.css";
-// import DragEnter from "./DragEnter";
-// import DragLeave from "./DragLeave";
+import { CgMenuRight } from "react-icons/cg";
+import { RxCross2 } from "react-icons/rx";
+import { useState } from "react";
 
-const Playground = () => {
-  // Slideeeeeeeeeeeee things
-  const settings = {
-    arrows: false,
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    // centerPadding: "100px",
-    slidesToShow: 1,
-    speed: 500,
+const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleOverlay = () => {
+    // console.log("Before"+isOpen);
+    setIsOpen(!isOpen);
+    // console.log("After"+isOpen);
   };
 
-  const services = [
+  const menuItems = [
     {
-      num: "01",
-      title: "digital marketing",
-      desc: "we help individuals understand the effectiveness of their marketing campaigns, allowing them to make data-driven decisions",
-      img: "a",
+      name: "Home",
+      link: "/",
     },
     {
-      num: "02",
-      title: "website development",
-      desc: "we help in creating beautiful websites with excellent user experience while also catering to all age groups and target audience",
-      img: "d",
+      name: "Works",
+      link: "/",
     },
     {
-      num: "03",
-      title: "printing",
-      desc: "we print business cards, brochures, posters, and other various materials as per the requirements of clients at a reasonable price. ",
-      img: "c",
+      name: "Case Studies",
+      link: "/",
+    },
+    {
+      name: "Expertise",
+      link: "/",
+    },
+    {
+      name: "About",
+      link: "/",
+    },
+    {
+      name: "Contact",
+      link: "/",
     },
   ];
-
   return (
-    <div>
-      <Slider {...settings}>
-        {services.map((service) => (
-          <div className="carousel-div">
-            <img
-              className="carousel-img"
-              src={require("../../assets/images/" + service.img + ".jpg")}
-              alt="service img"
-            />
-            <div className="container-fluid">
-              <div className="row ">
-                <div className="col-md-1 carousel-num">{service.num}</div>
-                <div className="col-md-4">
-                  <h2 className="service-title">&lt;{service.title}&gt;</h2>
-                  <p>{service.desc}</p>
-                </div>
+    <>
+      {/* <nav>
+        <div className="col-md-6 nav-logo">
+          <p className="nav-crocus">crocus pearl</p>
+          <p className="nav-tech">technologies</p>
+        </div>
+        <div className="nav-right">
+          <a className="nav-works" href="#!">
+            Works
+          </a>
+          <CgMenuRight className="nav-menu" onClick={toggleOverlay} />
+        </div>
+      </nav> */}
+      <header>
+        <input type="checkbox" id="menuToggle" />
+        <label id="burger" for="menuToggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <nav id="menuu"></nav>
+      </header>
+      {isOpen && (
+        <div className={isOpen ? "overlay active" : "overlay"}>
+          <div className="overlay__controls">
+            <RxCross2 className="overlay__close" onClick={toggleOverlay} />
+          </div>
+          <div className="overlay__content">
+            <div className="nav-container-1">
+              <p>menu</p>
+            </div>
+
+            <div className="nav-container-2">
+              {menuItems.map((menuItem) => (
+                <a className="menu-items" href={menuItem.link}>
+                  {menuItem.name}
+                </a>
+              ))}
+            </div>
+
+            <div className="nav-container-3">
+              <p className="nav-address sub-heading">nepal</p>
+              <p className="nav-address">khusibun, kathmandu</p>
+              <a href="mailto:projects@crocuspearl.com" className="nav-email">
+                projects@crocuspearl.com
+              </a>
+              <a href="/" className="nav-privacy">
+                Privacy Policy
+              </a>
+              <div className="nav-socials">
+                <p className="sub-heading">Social</p>
+                <a
+                  href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
+                  // className="link-button"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  Facebook
+                </a>
+                <a
+                  href="https://www.instagram.com/crocus.pearl/"
+                  // className="link-button"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/crocus-pearl-technologies-pvt-ltd/mycompany/"
+                  // className="link-button"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  Linkedin
+                </a>
               </div>
             </div>
           </div>
-        ))}
-      </Slider>
-      <div className="aaa">AAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</div>
-    </div>
+        </div>
+      )}
+    </>
   );
 };
 
-export default Playground;
+export default Nav;

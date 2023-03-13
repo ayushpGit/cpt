@@ -356,7 +356,7 @@
 }
 
 /* ---------------Menu--------------- */
-/* 
+
 label .nav-menu {
   position: absolute;
   right: -100px;
@@ -467,31 +467,4 @@ label a {
   font-size: 25px !important;
   text-decoration: none;
   font-family: poppins;
-} */
-
-/* Playground */
-
-.cursor {
-  /* background-color: #ffffff !important; */
-  mix-blend-mode: difference;
-  border: #ffffff 1px solid;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 200;
-  /* text of the cursor */
-  color: #ccc;
-  font-weight: 900;
-}
-
-.aaa{
-  height: 100vh;
-}
-
-*{
-  cursor: none;
 }

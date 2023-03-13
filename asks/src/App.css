@@ -65,3 +65,27 @@ a:focus {
   font-family: graphik-reg;
   font-weight: 900;
 }
+
+
+/* Cursor */
+
+.cursor {
+  /* background-color: #ffffff !important; */
+  mix-blend-mode: difference;
+  border: #ffffff 1px solid;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 200;
+  /* text of the cursor */
+  color: #ccc;
+  font-weight: 900;
+}
+
+* {
+  cursor: none;
+}
