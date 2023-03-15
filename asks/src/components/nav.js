@@ -1,16 +1,6 @@
 import "./components-style.css";
-import { CgMenuRight } from "react-icons/cg";
-import { RxCross2 } from "react-icons/rx";
-import { useState } from "react";
 
 const Nav = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleOverlay = () => {
-    // console.log("Before"+isOpen);
-    setIsOpen(!isOpen);
-    // console.log("After"+isOpen);
-  };
-
   const menuItems = [
     {
       name: "Home",
@@ -38,25 +28,24 @@ const Nav = () => {
     },
   ];
   return (
-    <>
-      <nav>
-        <div className="col-md-6 nav-logo">
-          <p className="nav-crocus">crocus pearl</p>
-          <p className="nav-tech">technologies</p>
-        </div>
-        <div className="nav-right">
-          <a className="nav-works" href="#!">
-            Works
-          </a>
-          <CgMenuRight className="nav-menu" onClick={toggleOverlay} />
-        </div>
-      </nav>
-
-      {isOpen && (
-        <div className={isOpen ? "overlay active" : "overlay"}>
-          <div className="overlay__controls">
-            <RxCross2 className="overlay__close" onClick={toggleOverlay} />
+    <nav>
+      <div className="col-md-6 nav-logo">
+        <p className="nav-crocus">crocus pearl</p>
+        <p className="nav-tech">technologies</p>
+      </div>
+      <div className="nav-right">
+        <a className="nav-works" href="#!">
+          Works
+        </a>
+        <input type="checkbox" id="ham-menu" />
+        <label for="ham-menu">
+          <div id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+        </label>
+        <div class="ham-menu">
           <div className="overlay__content">
             <div className="nav-container-1">
               <p>menu</p>
@@ -109,8 +98,8 @@ const Nav = () => {
             </div>
           </div>
         </div>
-      )}
-    </>
+      </div>
+    </nav>
   );
 };
 
