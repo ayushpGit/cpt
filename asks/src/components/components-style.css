@@ -151,7 +151,7 @@
 }
 label[for="ham-menu"] {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 33px;
   right: 25px;
   z-index: 999;

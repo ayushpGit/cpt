@@ -11,7 +11,7 @@ import Home from "../pages/home";
 import Play from "../pages/playground/playground";
 
 const Routing = () => {
-  const path = window.location.pathname;
+  // const path = window.location.pathname;
 
   // CURSOR THINGS__________________________________________________________
 
@@ -39,22 +39,28 @@ const Routing = () => {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
     },
-    text: {
+    links: {
+      x: mousePosition.x - 40,
+      y: mousePosition.y - 40,
+      height: 80,
+      width: 80,
+    },
+    drag: {
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
       padding: 50,
       paddingTop: 60,
       height: 150,
       width: 150,
-      // backgroundColor: "yellow",
     },
   };
+
+
+  // drag cursor variant
   const [cursorVariant, setCursorVariant] = useState("default");
 
-  // const dragEnter = () => setCursorVariant("text");
-
   const dragEnter = () => {
-    setCursorVariant("text");
+    setCursorVariant("drag");
     document.querySelector(".cursor").textContent = "DRAG";
   };
   const dragLeave = () => {
