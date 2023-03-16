@@ -38,14 +38,14 @@ const Nav = () => {
           Works
         </a>
         <input type="checkbox" id="ham-menu" />
-        <label for="ham-menu">
+        <label htmlFor="ham-menu">
           <div id="menu-icon">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </label>
-        <div class="ham-menu">
+        <div className="ham-menu">
           <div className="overlay__content">
             <div className="nav-container-1">
               <p>menu</p>

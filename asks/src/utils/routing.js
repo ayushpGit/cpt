@@ -54,16 +54,24 @@ const Routing = () => {
       width: 150,
     },
   };
+  const [cursorVariant, setCursorVariant] = useState("default");
 
+  // link cursor variant
+  var linkCursor = document.querySelectorAll("a");
+  const linkEnter = () => {
+    setCursorVariant("drag");
+  };
+  
+  linkCursor.addEventListener("mouseover", linkEnter);
+  linkCursor.addEventListener("mouseout", setCursorVariant("default"));
 
   // drag cursor variant
-  const [cursorVariant, setCursorVariant] = useState("default");
 
   const dragEnter = () => {
     setCursorVariant("drag");
     document.querySelector(".cursor").textContent = "DRAG";
   };
-  const dragLeave = () => {
+  const defaultLeave = () => {
     setCursorVariant("default");
     document.querySelector(".cursor").textContent = "";
   };
@@ -84,7 +92,7 @@ const Routing = () => {
           <Route
             exact
             path="/"
-            element={<Home dragEnter={dragEnter} dragLeave={dragLeave} />}
+            element={<Home dragEnter={dragEnter} dragLeave={defaultLeave} />}
           />
           <Route exact path="/playground" element={<Play />} />
           <Route exact path="/foot" element={<Foot />} />

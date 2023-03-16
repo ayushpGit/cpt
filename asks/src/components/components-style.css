@@ -149,7 +149,7 @@
 #ham-menu {
   display: none;
 }
-label[for="ham-menu"] {
+label[htmlFor="ham-menu"] {
   display: block;
   position: absolute;
   top: 33px;
@@ -202,7 +202,7 @@ label[for="ham-menu"] {
   opacity: 1;
   visibility: visible;
 }
-[for="ham-menu"] > div {
+[htmlFor="ham-menu"] > div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -213,9 +213,9 @@ label[for="ham-menu"] {
   border-radius: 15px;
 }
 
-[for="ham-menu"] > div > span:nth-child(4),
-[for="ham-menu"] > div > span:nth-child(5),
-[for="ham-menu"] > div > span:nth-child(6) {
+[htmlFor="ham-menu"] > div > span:nth-child(4),
+[htmlFor="ham-menu"] > div > span:nth-child(5),
+[htmlFor="ham-menu"] > div > span:nth-child(6) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 2px;
