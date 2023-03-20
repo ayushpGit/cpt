@@ -62,14 +62,15 @@
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  -webkit-transform-origin: 5% 8%;
-  -ms-transform-origin: 5% 8%;
-  transform-origin: 5% 8%;
+  -webkit-transform-origin: 60% 85%;
+  -ms-transform-origin: 60% 85%;
+  transform-origin: 60% 85%;
   font-family: graphik-reg, Averta, sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+  height: 35px;
 }
 
 .nav-container-2 {
@@ -357,8 +358,8 @@ label[for="ham-menu"] {
   left: 0;
   z-index: -1;
   object-fit: cover;
-  filter: grayscale(1) contrast(0.7);
-  opacity: 0.3;
+  filter: grayscale(0.2) hue-rotate(200deg) blur(0.8px) brightness(0.3);
+  /* opacity: 0.3;*/
 }
 
 /* ---------------Services/Carousel--------------- */
@@ -445,7 +446,7 @@ label[for="ham-menu"] {
 
 .mission-div {
   padding: 60vh 0 0 10vw;
-  color: #ccc;
+  color: #eee;
   height: 100vh;
 }
 
@@ -510,6 +511,14 @@ label[for="ham-menu"] {
 .nav-logo {
   float: left;
 }
+
+.nav-works,
+.nav-logo,
+.home-title,
+.white {
+  color: #eee !important;
+}
+
 /* Responsive Nav */
 
 @media screen and (max-width: 990px) {

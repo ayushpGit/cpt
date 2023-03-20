@@ -7,8 +7,10 @@ import { motion } from "framer-motion";
 // importing pages
 import Nav from "../components/nav";
 import Foot from "../components/footer";
-import Home from "../pages/home";
 import Play from "../pages/playground/playground";
+
+import Home from "../pages/home";
+import Works from "../pages/works";
 
 const Routing = () => {
   const path = window.location.pathname;
@@ -61,7 +63,7 @@ const Routing = () => {
   // const linkEnter = () => {
   //   setCursorVariant("drag");
   // };
-  
+
   // linkCursor.addEventListener("mouseover", linkEnter);
   // linkCursor.addEventListener("mouseout", setCursorVariant("default"));
 
@@ -89,13 +91,16 @@ const Routing = () => {
         <Routes>
           {/* home route */}
           <Route exact path="/nav" element={<Nav />} />
+          <Route exact path="/playground" element={<Play />} />
+          <Route exact path="/foot" element={<Foot />} />
+
+          {/* mains */}
           <Route
             exact
             path="/"
             element={<Home dragEnter={dragEnter} dragLeave={defaultLeave} />}
           />
-          <Route exact path="/playground" element={<Play />} />
-          <Route exact path="/foot" element={<Foot />} />
+          <Route exact path="/works" element={<Works />} />
 
           {/* default routes for invalid links */}
           {/* <Route path="*" element={<NotFound />} /> */}

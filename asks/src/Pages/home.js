@@ -33,11 +33,7 @@ const home = ({ dragEnter, dragLeave }) => {
 
       {/* footer section */}
       <section id="footer">
-        <Footer
-          email="info@crocuspearl.com"
-          locationTop="khusibun,"
-          locationBottom="kathmandu, nepal"
-        />
+        <Footer />
       </section>
     </>
   );

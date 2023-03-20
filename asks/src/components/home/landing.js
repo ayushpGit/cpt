@@ -1,4 +1,4 @@
-import video from "../../assets/videos/Raindrops_Videvo.mp4";
+import video from "../../assets/videos/video.mp4";
 
 const landing = () => {
   return (
@@ -13,12 +13,12 @@ const landing = () => {
       </span>
       <div className="row link-div">
         <div className="col-md-6 text-center">
-          <a href="#!" className="link-button">
+          <a href="#!" className="link-button white">
             digital portfolio
           </a>
         </div>
         <div className="col-md-6 text-center">
-          <a href="#!" className="link-button">
+          <a href="#!" className="link-button white">
             contact us
           </a>
         </div>

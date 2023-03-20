@@ -19,21 +19,21 @@ export default function Carousel() {
   const services = [
     {
       num: "01",
-      title: "digital marketing",
-      desc: "we help individuals understand the effectiveness of their marketing campaigns, allowing them to make data-driven decisions",
-      img: "a",
+      title: "website development",
+      desc: "we help in creating beautiful websites with excellent user experience while also catering to all age groups and target audience",
+      img: "KRI_20230320_web",
     },
     {
       num: "02",
-      title: "website development",
-      desc: "we help in creating beautiful websites with excellent user experience while also catering to all age groups and target audience",
-      img: "d",
+      title: "digital marketing",
+      desc: "we help individuals understand the effectiveness of their marketing campaigns, allowing them to make data-driven decisions",
+      img: "KRI_20230316_hivelaya posts1",
     },
     {
       num: "03",
       title: "printing",
       desc: "we print business cards, brochures, posters, and other various materials as per the requirements of clients at a reasonable price. ",
-      img: "c",
+      img: "KRI_20230314_brochure design",
     },
   ];
 

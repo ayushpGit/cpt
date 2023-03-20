@@ -1,6 +1,9 @@
 import React from "react";
 
-const footer = (props) => {
+const footer = () => {
+  let email = "info@crocuspearl.com";
+  let locationTop = "khusibun,";
+  let locationBottom = "kathmandu, nepal";
   return (
     <>
       <div className="footer-div-top">
@@ -14,13 +17,13 @@ const footer = (props) => {
           href="mailto:projects@crocuspearl.com"
           style={{ fontSize: "27px", marginBottom: "20px" }}
         >
-          {props.email}
+          {email}
         </a>
         <div className="row footer-row-middle">
           <div className="col-md-5">
-            {props.locationTop}
+            {locationTop}
             <br></br>
-            {props.locationBottom}
+            {locationBottom}
           </div>
           <a
             href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"

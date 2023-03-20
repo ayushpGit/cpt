@@ -8,7 +8,7 @@ const Nav = () => {
     },
     {
       name: "Works",
-      link: "/",
+      link: "/works",
     },
     {
       name: "Case Studies",
@@ -34,7 +34,7 @@ const Nav = () => {
         <p className="nav-tech">technologies</p>
       </div>
       <div className="nav-right">
-        <a className="nav-works" href="#!">
+        <a className="nav-works" href="/works">
           Works
         </a>
         <input type="checkbox" id="ham-menu" />
