@@ -25,6 +25,12 @@ export default function Carousel() {
     },
     {
       num: "02",
+      title: "mobile app development",
+      desc: "we help in creating beautiful mobile apps with excellent user experience while also catering to all age groups and target audience",
+      img: "KRI_20230316_app",
+    },
+    {
+      num: "03",
       title: "digital marketing",
       desc: "we help individuals understand the effectiveness of their marketing campaigns, allowing them to make data-driven decisions",
       img: "KRI_20230316_hivelaya posts1",
@@ -44,7 +50,7 @@ export default function Carousel() {
           <div className="carousel-div">
             <img
               className="carousel-img"
-              src={require("../../assets/images/"+ service.img +".jpg")}
+              src={require("../../assets/images/" + service.img + ".jpg")}
               alt="service img"
             />
             <div className="container-fluid">
