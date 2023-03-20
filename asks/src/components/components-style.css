@@ -149,7 +149,7 @@
 #ham-menu {
   display: none;
 }
-label[htmlFor="ham-menu"] {
+label[for="ham-menu"] {
   display: block;
   position: absolute;
   top: 33px;
@@ -174,7 +174,6 @@ label[htmlFor="ham-menu"] {
   justify-content: center;
   align-items: center;
 }
-
 .ham-menu > ul {
   display: flex;
   flex-flow: column nowrap;
@@ -202,7 +201,7 @@ label[htmlFor="ham-menu"] {
   opacity: 1;
   visibility: visible;
 }
-[htmlFor="ham-menu"] > div {
+[for="ham-menu"] > div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -213,9 +212,9 @@ label[htmlFor="ham-menu"] {
   border-radius: 15px;
 }
 
-[htmlFor="ham-menu"] > div > span:nth-child(4),
-[htmlFor="ham-menu"] > div > span:nth-child(5),
-[htmlFor="ham-menu"] > div > span:nth-child(6) {
+[for="ham-menu"] > div > span:nth-child(4),
+[for="ham-menu"] > div > span:nth-child(5),
+[for="ham-menu"] > div > span:nth-child(6) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 2px;

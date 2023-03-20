@@ -11,7 +11,7 @@ import Home from "../pages/home";
 import Play from "../pages/playground/playground";
 
 const Routing = () => {
-  // const path = window.location.pathname;
+  const path = window.location.pathname;
 
   // CURSOR THINGS__________________________________________________________
 
@@ -57,13 +57,13 @@ const Routing = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
 
   // link cursor variant
-  var linkCursor = document.querySelectorAll("a");
-  const linkEnter = () => {
-    setCursorVariant("drag");
-  };
+  // var linkCursor = document.querySelectorAll("a");
+  // const linkEnter = () => {
+  //   setCursorVariant("drag");
+  // };
   
-  linkCursor.addEventListener("mouseover", linkEnter);
-  linkCursor.addEventListener("mouseout", setCursorVariant("default"));
+  // linkCursor.addEventListener("mouseover", linkEnter);
+  // linkCursor.addEventListener("mouseout", setCursorVariant("default"));
 
   // drag cursor variant
 
