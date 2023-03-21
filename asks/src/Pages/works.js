@@ -6,11 +6,7 @@ const Works = () => {
   return (
     <>
       <Nav />
-      <Footer
-        email="info@crocuspearl.com"
-        locationTop="khusibun,"
-        locationBottom="kathmandu, nepal"
-      />
+      <Footer />
     </>
   );
 };

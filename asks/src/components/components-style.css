@@ -512,8 +512,8 @@ label[for="ham-menu"] {
   float: left;
 }
 
-.nav-works,
-.nav-logo,
+/* .nav-works,
+.nav-logo, */
 .home-title,
 .white {
   color: #eee !important;
