@@ -64,68 +64,6 @@ export default function Carousel() {
             </div>
           </div>
         ))}
-        {/* <div className="carousel-div">
-          <img
-            className="carousel-img"
-            src={require("../assets/images/img.jpg")}
-            alt="service img"
-          />
-          <div className="container-fluid">
-            <div className="row ">
-              <div className="col-md-1 carousel-num">01</div>
-              <div className="col-md-4">
-                <h2 className="service-title">&lt;Digital Marketing&gt;</h2>
-                <p>
-                  we help individuals understand the effectiveness of their
-                  marketing campaigns, allowing them to make data-driven
-                  decisions
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-div">
-          <img
-            className="carousel-img"
-            src={require("../assets/images/img.jpg")}
-            alt="service img"
-          />
-          <div className="container-fluid">
-            <div className="row ">
-              <div className="col-md-1 carousel-num">02</div>
-              <div className="col-md-4">
-                <h2 className="service-title">&lt;Website Development&gt;</h2>
-                <p>
-                  we help individuals understand the effectiveness of their
-                  marketing campaigns, allowing them to make data-driven
-                  decisions
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-div">
-          <img
-            className="carousel-img"
-            src={require("../assets/images/img.jpg")}
-            alt="service img"
-          />
-          <div className="container-fluid">
-            <div className="row ">
-              <div className="col-md-1 carousel-num">03</div>
-              <div className="col-md-4">
-                <h2 className="service-title">&lt;Digital Marketing&gt;</h2>
-                <p>
-                  we help individuals understand the effectiveness of their
-                  marketing campaigns, allowing them to make data-driven
-                  decisions
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </Slider>
     </div>
   );
