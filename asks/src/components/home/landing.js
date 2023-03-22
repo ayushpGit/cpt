@@ -2,8 +2,14 @@ import video from "../../assets/videos/video.mp4";
 
 const landing = () => {
   return (
-    <>
-      <video src={video} className="landing-video" muted autoPlay={true} loop></video>
+    <section id="top" className="container">
+      <video
+        src={video}
+        className="landing-video"
+        muted
+        autoPlay={true}
+        loop
+      ></video>
       <span className="home-title">
         empower
         <br />
@@ -23,7 +29,7 @@ const landing = () => {
           </a>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

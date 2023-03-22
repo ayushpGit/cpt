@@ -9,12 +9,12 @@ import Footer from "../components/footer";
 const home = ({ dragEnter, dragLeave }) => {
   return (
     <>
-      <Nav />
+      <div className="white">
+        <Nav />
+      </div>
 
       {/* top section */}
-      <section id="top" className="container">
-        <Landing />
-      </section>
+      <Landing />
 
       {/* services section */}
       <section

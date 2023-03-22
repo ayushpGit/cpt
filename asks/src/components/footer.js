@@ -2,8 +2,8 @@ import React from "react";
 
 const footer = () => {
   let email = "info@crocuspearl.com";
-  let locationTop = "khusibun,";
-  let locationBottom = "kathmandu, nepal";
+  let number = "9802888836";
+  let location = "khusibun, kathmandu, nepal";
   return (
     <>
       <div className="footer-div-top">
@@ -21,9 +21,9 @@ const footer = () => {
         </a>
         <div className="row footer-row-middle">
           <div className="col-md-5">
-            {locationTop}
+            <a href="tel:9802888836"></a> {number}
             <br></br>
-            {locationBottom}
+            {location}
           </div>
           <a
             href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"

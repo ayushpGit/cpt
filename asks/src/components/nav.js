@@ -29,12 +29,12 @@ const Nav = () => {
   ];
   return (
     <nav>
-      <a href="/" className="col-md-6 nav-logo white">
+      <a href="/" className="col-md-6 nav-logo">
         <p className="nav-crocus">crocus pearl</p>
         <p className="nav-tech">technologies</p>
       </a>
       <div className="nav-right">
-        <a className="nav-works white" href="/works">
+        <a className="nav-works" href="/works">
           Works
         </a>
         <input type="checkbox" id="ham-menu" />
