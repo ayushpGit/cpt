@@ -5,12 +5,15 @@ import Footer from "../components/footer";
 
 const Works = () => {
   const cardItems = [
+    // add date, category, filter
     {
       img: "KRI_20230320_web",
+
       title: "Website development",
     },
     {
       img: "KRI_20230314_brochure design",
+
       title: "brochure design/printing",
     },
   ];
