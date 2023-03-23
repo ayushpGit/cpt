@@ -12,6 +12,11 @@ import Play from "../pages/playground/playground";
 import Home from "../pages/home";
 import Works from "../pages/works";
 
+// fonts
+import "../assets/font/GraphikLight.otf";
+import "../assets/font/GraphikExtralight.otf";
+import "../assets/font/GraphikRegular.otf";
+
 const Routing = () => {
   const path = window.location.pathname;
 
