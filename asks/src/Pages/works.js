@@ -7,14 +7,36 @@ const Works = () => {
   const cardItems = [
     // add date, category, filter
     {
+      date: "2016",
+      title: "Better than hotel",
+      desc: "Website development",
+      category: "web",
       img: "KRI_20230320_web",
-
-      title: "Website development",
+      link: "/",
     },
     {
+      date: "2016",
+      title: "Silver lining",
+      desc: "brochure design/printing",
+      category: "print",
       img: "KRI_20230314_brochure design",
-
-      title: "brochure design/printing",
+      link: "/",
+    },
+    {
+      date: "2016",
+      title: "Better than hotel",
+      desc: "App",
+      category: "app",
+      img: "KRI_20230316_app",
+      link: "/",
+    },
+    {
+      date: "2016",
+      title: "Posts",
+      desc: "Social Media Posts",
+      category: "dm",
+      img: "KRI_20230321_posts1",
+      link: "/",
     },
   ];
 
@@ -22,26 +44,30 @@ const Works = () => {
     <>
       <Nav />
       <div className="container pt-5">
-        <div
-          style={{
-            paddingRight: "15px",
-            paddingLeft: "15px",
-          }}
-        >
-          <p className="sub-heading">SELECTED PROJECTS</p>
-          <h1 className="heading">Digital Portfolio</h1>
-        </div>
+        <p className="sub-heading">SELECTED PROJECTS</p>
+        <h1 className="heading" style={{ fontSize: "6rem" }}>
+          Digital Portfolio
+        </h1>
 
-        <div className="works-cards">
+        <div className="works-cards row">
           {cardItems.map((cardItem) => (
-            <div className="works-card col-md-6">
-              <img
-                className="works-card-img"
-                src={require("../assets/images/" + cardItem.img + ".jpg")}
-                alt=""
-              />
-              <h1>{cardItem.title}</h1>
-            </div>
+            <>
+              <a href={cardItem.link} className="col-md-6">
+                <div className="works-card">
+                  <img
+                    className="works-card-img"
+                    src={require("../assets/images/" + cardItem.img + ".jpg")}
+                    alt=""
+                  />
+                  <div className="works-card-content">
+                    <p className="sub-heading">{cardItem.date}</p>
+                    <h1 className="heading">
+                      {cardItem.title} - {cardItem.desc}
+                    </h1>
+                  </div>
+                </div>
+              </a>
+            </>
           ))}
         </div>
       </div>

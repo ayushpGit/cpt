@@ -27,7 +27,7 @@ body {
 
 ::selection {
   color: transparent;
-  text-shadow: 0px 0px 5px #000;
+  text-shadow: 0px 0px 5px #bfbfbf;
   font-size: 50px;
 }
 

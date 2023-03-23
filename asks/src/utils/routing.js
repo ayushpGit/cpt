@@ -64,16 +64,17 @@ const Routing = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
 
   // link cursor variant
-  // var linkCursor = document.querySelectorAll("a");
+  // let linkCursor = document.querySelectorAll("a");
   // const linkEnter = () => {
   //   setCursorVariant("drag");
   // };
 
-  // linkCursor.addEventListener("mouseover", linkEnter);
+  // linkCursor.addEventListener("mouseover", function () {
+  //   setCursorVariant("drag");
+  // });
   // linkCursor.addEventListener("mouseout", setCursorVariant("default"));
 
   // drag cursor variant
-
   const dragEnter = () => {
     setCursorVariant("drag");
     document.querySelector(".cursor").textContent = "DRAG";
