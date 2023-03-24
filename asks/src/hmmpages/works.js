@@ -64,10 +64,10 @@ const Works = () => {
                     <h1 className="heading mt-3">
                       {cardItem.title} - {cardItem.desc}
                     </h1>
-                    {/* <p className="sub-heading mt-4">
+                    <p className="works-card-learn sub-heading mt-4" >
                       Learn More
                       <AiOutlineArrowRight />
-                    </p> */}
+                    </p>
                   </div>
                 </div>
               </a>

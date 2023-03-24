@@ -113,7 +113,7 @@
 .sub-heading {
   padding-bottom: 0px;
   margin-bottom: 0px !important;
-  color: #c6c6c6;
+  color: #7a7a7a;
   font-size: 18px;
   letter-spacing: 2px;
 }
@@ -726,4 +726,13 @@ label a {
   padding: 65px;
   mix-blend-mode: difference;
   color: #fff !important;
+}
+
+.works-card-learn{
+  /* display: none; */
+}
+
+.works-card:hover .works-card-learn {
+  /* display: block; */
+  /* transition: display 4.5s; */
 }
