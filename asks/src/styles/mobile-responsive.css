@@ -1,4 +1,11 @@
 @media only screen and (max-width: 600px) {
+  body {
+    font-family: graphik;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  /* nav */
   .nav-crocus {
     padding: 30px 0px 0px 0px;
   }
@@ -15,7 +22,6 @@
     font-size: 49px;
     line-height: 76px;
     margin-top: 15vh;
-    /* padding: 0px 0px 0px 7px; */
   }
   .link-div {
     margin-top: 12vh;
@@ -24,20 +30,43 @@
   /* carousel */
   .slick-list {
     padding: 0px !important;
-    /* width: 118vw; */
     overflow-x: hidden;
   }
   .slick-track {
     width: 1500px !important;
   }
   .slick-slide.slick-active.slick-center.slick-current {
-    /* padding: 20px; */
     width: 360px !important;
+  }
+  .slick-slide.slick-active.slick-center.slick-current .carousel-div {
+    padding: 12px;
   }
   .carousel-img {
     margin-bottom: 35px;
   }
   .service-title {
     font-size: 40px;
+  }
+
+  /* mission */
+  .mission-div {
+    padding: 63vh 9px 0 15px;
+    color: #eee;
+    height: 100vh;
+  }
+  .mission-div h2 {
+    font-size: 40px;
+  }
+
+  /* footer */
+  .footer-div-top {
+    padding: 23vh 15px;
+  }
+  .footer-div-top h1 {
+    font-size: 35px;
+    line-height: 49px;
+  }
+  .footer-div-bottom {
+    padding: 0 15px;
   }
 }

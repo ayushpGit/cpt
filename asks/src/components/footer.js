@@ -35,7 +35,7 @@ const footer = () => {
           </a>
           <a
             href="https://www.instagram.com/crocus.pearl/"
-            className="link-button col-md-2 text-center"
+            className="link-button col-md-2 text-md-center"
             target={"_blank"}
             rel={"noreferrer"}
           >

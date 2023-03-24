@@ -3,7 +3,6 @@
 .nav-crocus {
   padding: 45px 0px 0px 35px;
   margin: 0;
-  color: #f94f6d;
   /* position: relative;
   left: 45px;
   top: 42px; */
@@ -453,6 +452,9 @@ label[for="ham-menu"] {
   height: 100vh;
 }
 
+.mission-div h2 {
+  font-size: 69px;
+}
 /* ---------------Footer--------------- */
 .footer-div-top {
   padding: 37vh 10vw;

@@ -6,7 +6,7 @@ const mission = () => {
       <img src={require("../../assets/images/e.jpg")} alt="" className="bgimg" />
       <div className="mission-div">
         <p>&lt;mission&gt;</p>
-        <h2 style={{ fontSize: "69px" }}>
+        <h2>
           to make technology
           <br></br>an investment for your business
           <br></br>in this digital era
