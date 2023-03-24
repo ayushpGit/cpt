@@ -1,13 +1,13 @@
 import React from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-// import Footer from "../assets/images/KRI_20230320_web.jpg";
+// import AiOutlineArrowRight from "react-icons/ai";
 
 const Works = () => {
   const cardItems = [
     // add date, category, filter
     {
-      date: "2016",
+      date: "2023",
       title: "Better than hotel",
       desc: "Website development",
       category: "web",
@@ -15,7 +15,7 @@ const Works = () => {
       link: "/",
     },
     {
-      date: "2016",
+      date: "2022",
       title: "Silver lining",
       desc: "brochure design/printing",
       category: "print",
@@ -23,7 +23,7 @@ const Works = () => {
       link: "/",
     },
     {
-      date: "2016",
+      date: "2023",
       title: "Better than hotel",
       desc: "App",
       category: "app",
@@ -61,9 +61,13 @@ const Works = () => {
                   />
                   <div className="works-card-content">
                     <p className="sub-heading">{cardItem.date}</p>
-                    <h1 className="heading">
+                    <h1 className="heading mt-3">
                       {cardItem.title} - {cardItem.desc}
                     </h1>
+                    {/* <p className="sub-heading mt-4">
+                      Learn More
+                      <AiOutlineArrowRight />
+                    </p> */}
                   </div>
                 </div>
               </a>

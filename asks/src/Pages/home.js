@@ -1,4 +1,5 @@
 import "./pages-style.css";
+import React from "react";
 import Nav from "../components/nav";
 // import { Carousel } from "@trendyol-js/react-carousel";
 import Landing from "../components/home/landing";

@@ -1,3 +1,4 @@
+import React from "react";
 import video from "../../assets/videos/video.mp4";
 
 const landing = () => {

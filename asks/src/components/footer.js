@@ -21,7 +21,7 @@ const footer = () => {
         </a>
         <div className="row footer-row-middle">
           <div className="col-md-5">
-            <a href="tel:9802888836"></a> {number}
+            <a href="tel:9802888836">{number}</a>
             <br></br>
             {location}
           </div>
