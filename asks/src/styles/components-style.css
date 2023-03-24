@@ -3,6 +3,7 @@
 .nav-crocus {
   padding: 45px 0px 0px 35px;
   margin: 0;
+  color: #f94f6d;
   /* position: relative;
   left: 45px;
   top: 42px; */
@@ -720,6 +721,7 @@ label a {
 }
 .works-card:hover .works-card-img {
   transform: scale(1.025);
+  filter: blur(1.01px) brightness(0.9);
 }
 
 .works-card-content {
@@ -728,11 +730,13 @@ label a {
   color: #fff !important;
 }
 
-.works-card-learn{
-  /* display: none; */
+.works-card-learn {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 .works-card:hover .works-card-learn {
-  /* display: block; */
-  /* transition: display 4.5s; */
+  visibility: visible;
+  opacity: 1;
 }

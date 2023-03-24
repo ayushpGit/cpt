@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+  .nav-crocus {
+    padding: 30px 0px 0px 0px;
+  }
+  .nav-tech {
+    padding: 0px 0px 0px 2px;
+  }
+  .nav-works {
+    display: none;
+  }
+  section#top {
+    padding: 0px 0 0 9px;
+  }
+  .home-title {
+    font-size: 49px;
+    line-height: 76px;
+    margin-top: 15vh;
+    /* padding: 0px 0px 0px 7px; */
+  }
+  .link-div {
+    margin-top: 12vh;
+  }
+
+  /* carousel */
+  .slick-list {
+    padding: 0px !important;
+    /* width: 118vw; */
+    overflow-x: hidden;
+  }
+  .slick-track {
+    width: 1500px !important;
+  }
+  .slick-slide.slick-active.slick-center.slick-current {
+    /* padding: 20px; */
+    width: 360px !important;
+  }
+  .carousel-img {
+    margin-bottom: 35px;
+  }
+  .service-title {
+    font-size: 40px;
+  }
+}

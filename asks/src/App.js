@@ -1,5 +1,8 @@
 import "./App.css";
 import AppRouting from "./utils/routing";
+import "./styles/pages-style.css";
+import "./styles/components-style.css";
+import "./styles/mobile-responsive.css";
 
 // fonts
 import "./assets/font/GraphikLight.otf";

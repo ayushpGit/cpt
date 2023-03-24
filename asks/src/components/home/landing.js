@@ -19,12 +19,12 @@ const landing = () => {
         with our digital solutions
       </span>
       <div className="row link-div">
-        <div className="col-md-6 text-center">
+        <div className="col-md-6 text-md-center">
           <a href="#!" className="link-button white">
             digital portfolio
           </a>
         </div>
-        <div className="col-md-6 text-center">
+        <div className="col-md-6 text-md-center">
           <a href="#!" className="link-button white">
             contact us
           </a>
