@@ -45,7 +45,7 @@ const Works = () => {
       <Nav />
       <div className="container pt-5">
         <p className="sub-heading">SELECTED PROJECTS</p>
-        <h1 className="heading" style={{ fontSize: "6rem" }}>
+        <h1 className="heading large" style={{ fontSize: "6rem" }}>
           Digital Portfolio
         </h1>
 

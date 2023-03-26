@@ -1,16 +1,18 @@
 @media only screen and (max-width: 600px) {
   body {
     font-family: graphik;
-    font-size: 16px;
+    font-size: 15px;
     overflow-x: hidden;
   }
 
   /* nav */
   .nav-crocus {
-    padding: 30px 0px 0px 0px;
+    padding: 25px 0px 0px 0px;
+    font-size: 30px;
   }
   .nav-tech {
     padding: 0px 0px 0px 2px;
+    font-size: 13.4px;
   }
   .nav-works {
     display: none;
@@ -27,6 +29,26 @@
     margin-top: 12vh;
   }
 
+  /* nav menu*/
+  .menu-items {
+    padding-top: 10px;
+    font-size: 40px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+  .nav-socials {
+    padding-top: 25px;
+  }
+  .nav-email {
+    margin-top: 0;
+  }
+  #ham-menu:checked ~ div.ham-menu {
+    padding-top: 60px;
+  }
+  .ham-menu {
+    width: 102vw;
+  }
+  
   /* carousel */
   .slick-list {
     padding: 0px !important;
@@ -68,5 +90,28 @@
   }
   .footer-div-bottom {
     padding: 0 15px;
+  }
+  .footer-row-bottom {
+    font-size: 11.5px;
+  }
+
+  /* works page */
+  .works-card-img {
+    width: 96%;
+    height: 61vh !important;
+  }
+  .works-card {
+    width: 100%;
+    height: 61vh !important;
+  }
+  .works-card-content {
+    padding: 30px;
+  }
+  .sub-heading {
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  h1.heading.large {
+    font-size: 3.5rem !important;
   }
 }
