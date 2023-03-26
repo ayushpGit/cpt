@@ -14,7 +14,7 @@ const footer = () => {
       </div>
       <div className="footer-div-bottom">
         <a
-          href="mailto:projects@crocuspearl.com"
+          href="mailto:info@crocuspearl.com"
           style={{ fontSize: "27px", marginBottom: "20px" }}
         >
           {email}

@@ -20,7 +20,7 @@ const landing = () => {
       </span>
       <div className="row link-div">
         <div className="col-md-6 text-md-center">
-          <a href="#!" className="link-button white">
+          <a href="/works" className="link-button white">
             digital portfolio
           </a>
         </div>

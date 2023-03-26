@@ -62,8 +62,8 @@ const Nav = () => {
             <div className="nav-container-3">
               <p className="nav-address sub-heading">nepal</p>
               <p className="nav-address">khusibun, kathmandu</p>
-              <a href="mailto:projects@crocuspearl.com" className="nav-email">
-                projects@crocuspearl.com
+              <a href="mailto:info@crocuspearl.com" className="nav-email">
+                info@crocuspearl.com
               </a>
               <a href="/" className="nav-privacy">
                 Privacy Policy

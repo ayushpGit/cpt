@@ -32,8 +32,8 @@
   /* nav menu*/
   .menu-items {
     padding-top: 10px;
-    font-size: 40px;
-    line-height: 29px;
+    font-size: 35px;
+    line-height: 15px;
     margin-bottom: 20px;
   }
   .nav-socials {
@@ -48,7 +48,10 @@
   .ham-menu {
     width: 102vw;
   }
-  
+  .nav-container-2 {
+    padding-bottom: 30px;
+  }
+
   /* carousel */
   .slick-list {
     padding: 0px !important;
