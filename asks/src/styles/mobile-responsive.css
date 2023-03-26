@@ -49,7 +49,13 @@
     width: 102vw;
   }
   .nav-container-2 {
-    padding-bottom: 30px;
+    padding-bottom: 52px;
+  }
+  .nav-socials a {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
   }
 
   /* carousel */
@@ -111,8 +117,8 @@
     padding: 30px;
   }
   .sub-heading {
-    font-size: 12px;
-    letter-spacing: 5px;
+    /* font-size: 12px;
+    letter-spacing: 5px; */
   }
   h1.heading.large {
     font-size: 3.5rem !important;
