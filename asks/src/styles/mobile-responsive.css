@@ -19,6 +19,7 @@
   }
   section#top {
     padding: 0px 0 0 9px;
+    height: 75vh;
   }
   .home-title {
     font-size: 49px;
@@ -64,19 +65,25 @@
     overflow-x: hidden;
   }
   .slick-track {
-    width: 1500px !important;
+    width: 1700px !important;
   }
   .slick-slide.slick-active.slick-center.slick-current {
-    width: 360px !important;
+    width: 94vw !important;
   }
   .slick-slide.slick-active.slick-center.slick-current .carousel-div {
     padding: 12px;
   }
-  .carousel-img {
+  .slick-slide.slick-active.slick-center.slick-current
+    .carousel-div
+    .carousel-img {
     margin-bottom: 35px;
+    height: 60vh;
+  }
+  .carousel-div .carousel-img {
+    margin-bottom: 31px;
   }
   .service-title {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   /* mission */
@@ -86,7 +93,7 @@
     height: 100vh;
   }
   .mission-div h2 {
-    font-size: 40px;
+    font-size: 37px;
   }
 
   /* footer */
