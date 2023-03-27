@@ -42,3 +42,7 @@ v1.1.2
 - cursor works
 - new nav done
 - updated hierarchy: moved all the css files to /styles folder [except App.css]
+
+
+todo:
+add arrows in drag, finish contact page, add inside page of works page

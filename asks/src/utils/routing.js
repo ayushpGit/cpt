@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
+// icon
+// import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+
 // cursor
 import { motion } from "framer-motion";
 
@@ -11,7 +14,7 @@ import Play from "../pages/playground/playground";
 
 import Home from "../pages/home";
 import Works from "../pages/works";
-
+import Contact from "../pages/contact";
 
 const Routing = () => {
   const path = window.location.pathname;
@@ -51,7 +54,7 @@ const Routing = () => {
     drag: {
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
-      padding: 50,
+      padding: 32,
       paddingTop: 60,
       height: 150,
       width: 150,
@@ -73,7 +76,7 @@ const Routing = () => {
   // drag cursor variant
   const dragEnter = () => {
     setCursorVariant("drag");
-    document.querySelector(".cursor").textContent = "DRAG";
+    document.querySelector(".cursor").textContent = "<- DRAG ->";
   };
   const defaultLeave = () => {
     setCursorVariant("default");
@@ -103,6 +106,7 @@ const Routing = () => {
             element={<Home dragEnter={dragEnter} dragLeave={defaultLeave} />}
           />
           <Route exact path="/works" element={<Works />} />
+          <Route exact path="/Contact" element={<Contact />} />
 
           {/* default routes for invalid links */}
           {/* <Route path="*" element={<NotFound />} /> */}

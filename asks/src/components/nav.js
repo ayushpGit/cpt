@@ -24,7 +24,7 @@ const Nav = () => {
     },
     {
       name: "Contact",
-      link: "/",
+      link: "/contact",
     },
   ];
   return (
