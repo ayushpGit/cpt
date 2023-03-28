@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <Nav />
       <div className="container">
-        <div className="row">
+        <div className="row contact-spacing">
           <div className="col-md-6 contact-left">
             <h1>
               <span className="font-bold">That idea you have,</span>
@@ -15,9 +15,9 @@ const Contact = () => {
             </h1>
           </div>
           <div className="col-md-6 contact-right">
-            <p>Say hello</p>
-            {/* 
-            <form className="demoForm">
+            <h1>Say hello</h1>
+
+            {/* <form className="demoForm">
               <div className="form-group">
                 <label htmlFor="email">Email address</label>
                 <input type="email" className="form-control" name="email" />
@@ -34,29 +34,41 @@ const Contact = () => {
                 Sign up
               </button>
             </form> */}
+
             <form action="" className="container">
-              <div className="row pt-5">
+              <div className="row">
                 <div class="input-field col-md-6">
                   <input type="text" id="name" required />
-                  <label for="name">Your name</label>
+                  <label className="form-label" for="name">
+                    Your name
+                  </label>
                 </div>
                 <div class="input-field col-md-6">
                   <input type="text" id="email" required />
-                  <label for="email">Email</label>
+                  <label className="form-label" for="email">
+                    Email
+                  </label>
                 </div>
               </div>
-              <div className="row pt-5">
+              <div className="row">
                 <div class="input-field col-12">
                   <input type="text" id="subject" required />
-                  <label for="subject">Subject</label>
+                  <label className="form-label" for="subject">
+                    Subject
+                  </label>
                 </div>
               </div>
-              <div className="row pt-5">
+              <div className="row">
                 <div class="input-field col-12">
-                  <input type="text" id="message" required />
-                  <label for="message">Message</label>
+                  <textarea type="text" id="message" rows="1" required />
+                  <label className="form-label" for="message">
+                    Message
+                  </label>
                 </div>
               </div>
+              <button type="submit" class="btn-cpt link-button pt-5 mt-5">
+                Submit
+              </button>
             </form>
           </div>
         </div>

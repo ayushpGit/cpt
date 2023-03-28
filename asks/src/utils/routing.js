@@ -76,7 +76,7 @@ const Routing = () => {
   // drag cursor variant
   const dragEnter = () => {
     setCursorVariant("drag");
-    document.querySelector(".cursor").textContent = "<- DRAG ->";
+    document.querySelector(".cursor").textContent = "< DRAG >";
   };
   const defaultLeave = () => {
     setCursorVariant("default");

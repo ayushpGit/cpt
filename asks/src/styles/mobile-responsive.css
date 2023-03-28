@@ -123,11 +123,16 @@
   .works-card-content {
     padding: 30px;
   }
-  .sub-heading {
-    /* font-size: 12px;
-    letter-spacing: 5px; */
-  }
+  /* .sub-heading {
+    font-size: 12px;
+    letter-spacing: 5px;
+  } */
   h1.heading.large {
     font-size: 3.5rem !important;
+  }
+
+  /* contact */
+  .contact-spacing {
+    padding: 0;
   }
 }

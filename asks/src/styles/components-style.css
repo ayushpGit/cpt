@@ -227,7 +227,7 @@ label[for="ham-menu"] {
 #ham-menu:checked + label span:nth-child(5) {
   transform: scale(0);
 }
-#ham-menu:checked + label span:nth-child(1) { 
+#ham-menu:checked + label span:nth-child(1) {
   transform: translateY(15px) rotate(45deg);
   margin: 0;
 }
@@ -745,41 +745,55 @@ label a {
 }
 
 /* CONTACT PAGE ----------------------------------- */
-
+.contact-spacing {
+  padding: 15vh 0;
+}
+.contact-right h1 {
+  padding: 0 8px 20px 8px;
+  font-size: 50px;
+}
 .input-field {
   position: relative;
-  /* width: 250px;
-  height: 44px; */
-  /* padding: 0px; */
   line-height: 44px;
+  padding-top: 20px;
 }
-label {
+.form-label {
   position: absolute;
-  padding: 0 15px;
-  top: 0;
+  padding: 0 8px;
+  top: 25px;
   left: 0;
   width: 100%;
   color: #d3d3d3;
   transition: 0.2s all;
   cursor: text;
 }
-input {
+.input-field input,
+.input-field textarea {
   width: 100%;
   border: 0;
   outline: 0;
-  padding: 0.5rem 8px;
+  padding: 0 2px 0 2px;
+  margin: 13px 0 0px 0;
   border-bottom: 2px solid #d3d3d3;
   box-shadow: none;
   color: #111;
 }
-input:invalid {
+.input-field input:invalid,
+.input-field textarea:invalid {
   outline: 0;
 }
-input:focus, input:valid {
+.input-field input:focus,
+.input-field input:valid,
+.input-field textarea:focus,
+.input-field textarea:valid {
   border-color: #111;
+  background-color: #ffffff00 !important;
 }
-input:focus ~ label, input:valid ~ label {
+.input-field input:focus ~ .form-label,
+.input-field input:valid ~ .form-label,
+.input-field textarea:focus ~ .form-label,
+.input-field textarea:valid ~ .form-label {
   font-size: 14px;
-  top: -24px;
+  top: 5px;
   color: #111;
 }

@@ -29,7 +29,7 @@ const Nav = () => {
   ];
   return (
     <nav>
-      <a href="/" className="col-md-6 nav-logo">
+      <a href="/" className="col nav-logo">
         <p className="nav-crocus">crocus pearl</p>
         <p className="nav-tech">technologies</p>
       </a>
