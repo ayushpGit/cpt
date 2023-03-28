@@ -6,6 +6,10 @@
   }
 
   /* nav */
+  .nav-logo {
+    position: relative;
+    padding-left: 9px;
+  }
   .nav-crocus {
     padding: 25px 0px 0px 0px;
     font-size: 30px;
