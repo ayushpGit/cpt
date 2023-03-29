@@ -45,4 +45,6 @@ v1.1.2
 
 
 todo:
-finish contact page, add inside page of works page
+add inside page of works page
+add react scroll
+https://www.npmjs.com/package/smooth-scrollbar-react
