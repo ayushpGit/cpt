@@ -25,7 +25,7 @@ const landing = () => {
           </a>
         </div>
         <div className="col-md-6 text-md-center">
-          <a href="#!" className="link-button white">
+          <a href="/contact" className="link-button white">
             contact us
           </a>
         </div>

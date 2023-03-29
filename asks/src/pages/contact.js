@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "../components/nav";
 // import Footer from "../components/footer";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
 
 const Contact = () => {
   return (
@@ -8,14 +10,64 @@ const Contact = () => {
       <Nav />
       <div className="container">
         <div className="row contact-spacing">
-          <div className="col-md-6 contact-left">
+          <div className="col-lg-8 col-md-6 contact-left">
             <h1>
               <span className="font-bold">That idea you have,</span>
-              <br></br>Let’s start working on it
+              <br></br>
+              Let’s start working on it
             </h1>
+            <a href="mailto:info@crocuspearl.com" className="sub-heading ">
+              info@crocuspearl.com
+            </a>
+            <div className="row socials d-md-block d-none">
+              {/* find us */}
+              <div className="col-md-4">
+                <a className="heading"> Find us</a>
+                <br></br>
+                <a
+                  href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
+                  className="contact-icon"
+                  style={{
+                    paddingLeft: "0",
+                  }}
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="https://www.instagram.com/crocus.pearl/"
+                  className="contact-icon"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  <GrInstagram />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/crocus-pearl-technologies-pvt-ltd/mycompany/"
+                  className="contact-icon"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  <FaLinkedinIn />
+                </a>
+              </div>
+              {/* address */}
+              <div className="col-md-6">
+                <a
+                  className="heading"
+                  href="https://goo.gl/maps/wU61HnMv2ZzbipiNA"
+                  target="_blank"
+                >
+                  khusibun, kathmandu, nepal
+                </a>
+                <br></br>
+                <a href="tel:9802888836">9802888836</a>
+              </div>
+            </div>
           </div>
-          <div className="col-md-6 contact-right">
-            <h1>Say hello</h1>
+          <div className="col-lg-4 col-md-6 contact-right">
+            <h1 className="d-md-block d-none">Say hello</h1>
 
             {/* <form className="demoForm">
               <div className="form-group">
@@ -66,10 +118,57 @@ const Contact = () => {
                   </label>
                 </div>
               </div>
-              <button type="submit" class="btn-cpt link-button pt-5 mt-5">
+              <button type="submit" class="btn-cpt link-button mt-5">
                 Submit
               </button>
             </form>
+          </div>
+          <div className="row socials d-md-none d-block">
+            {/* find us */}
+            <div className="col-md-4">
+              <a className="heading"> Find us</a>
+              <br></br>
+              <a
+                href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
+                className="contact-icon"
+                style={{
+                  paddingLeft: "0",
+                }}
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://www.instagram.com/crocus.pearl/"
+                className="contact-icon"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <GrInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/crocus-pearl-technologies-pvt-ltd/mycompany/"
+                className="contact-icon"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <FaLinkedinIn />
+              </a>
+            </div>
+            <hr />
+            {/* address */}
+            <div className="col-12">
+              <a
+                className="heading"
+                href="https://goo.gl/maps/wU61HnMv2ZzbipiNA"
+                target="_blank"
+              >
+                khusibun, kathmandu, nepal
+              </a>
+              <br></br>
+              <a href="tel:9802888836">9802888836</a>
+            </div>
           </div>
         </div>
       </div>

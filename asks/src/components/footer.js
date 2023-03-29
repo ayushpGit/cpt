@@ -23,7 +23,9 @@ const footer = () => {
           <div className="col-md-5">
             <a href="tel:9802888836">{number}</a>
             <br></br>
-            {location}
+            <a href="https://goo.gl/maps/wU61HnMv2ZzbipiNA" target="_blank">
+              {location}
+            </a>
           </div>
           <a
             href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"

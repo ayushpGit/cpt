@@ -750,12 +750,13 @@ label a {
 }
 
 .contact-left h1 {
-  font-size: 50px;
+  font-size: 60px;
+  line-height: 1.5;
 }
 
 /* right contact */
 .contact-right h1 {
-  padding: 30px 0 10px 8px;
+  padding: 0 8px;
   /* font-size: 40px; */
 }
 .input-field {
@@ -802,4 +803,28 @@ label a {
   font-size: 14px;
   top: 5px;
   color: #111;
+}
+
+.socials {
+  padding-top: 100px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+}
+.socials .contact-icon {
+  padding: 15px;
+}
+.contact-right {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-right .btn-cpt {
+  background-color: #111;
+  padding: 15px;
+  color: #eee;
+  border-radius: 5px;
+}
+.contact-right .btn-cpt:hover {
+  background-color: #333;
 }
