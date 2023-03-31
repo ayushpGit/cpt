@@ -836,7 +836,7 @@ label a {
 }
 .works-top-left .heading {
   font-size: 3.75rem;
-  line-height: 1.1em;
+  /* line-height: 1.1em; */
 }
 .works-p {
   color: #878a8f;

@@ -12,9 +12,7 @@ const SubWorks = () => {
           <div className="col-lg-6 works-top-left">
             {/* title */}
             <h2 className="sub-heading pb-2">CASE STUDY</h2>
-            <h1 className="heading">
-              Basic UX — design resources for InVision Studio
-            </h1>
+            <h1 className="heading">Better than hotel — Website development</h1>
             {/* role */}
             <h2 className="sub-heading pb-2 pt-5">MY ROLE</h2>
             <ul

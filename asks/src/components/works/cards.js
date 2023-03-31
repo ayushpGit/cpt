@@ -10,7 +10,7 @@ const Cards = () => {
       desc: "Website development",
       category: "web",
       img: "KRI_20230320_web",
-      link: "/",
+      link: "/subworks",
     },
     {
       date: "2022",
@@ -18,7 +18,7 @@ const Cards = () => {
       desc: "brochure design/printing",
       category: "print",
       img: "KRI_20230314_brochure design",
-      link: "/",
+      link: "/subworks",
     },
     {
       date: "2023",
@@ -26,7 +26,7 @@ const Cards = () => {
       desc: "App",
       category: "app",
       img: "KRI_20230316_app",
-      link: "/",
+      link: "/subworks",
     },
     {
       date: "2016",
@@ -34,7 +34,7 @@ const Cards = () => {
       desc: "Social Media Posts",
       category: "dm",
       img: "KRI_20230321_posts1",
-      link: "/",
+      link: "/subworks",
     },
   ];
   return (
