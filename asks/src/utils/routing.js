@@ -14,6 +14,7 @@ import Play from "../pages/playground/playground";
 
 import Home from "../pages/home";
 import Works from "../pages/works";
+import SubWorks from "../pages/subWorks";
 import Contact from "../pages/contact";
 
 const Routing = () => {
@@ -106,6 +107,7 @@ const Routing = () => {
             element={<Home dragEnter={dragEnter} dragLeave={defaultLeave} />}
           />
           <Route exact path="/works" element={<Works />} />
+          <Route exact path="/subworks" element={<SubWorks />} />
           <Route exact path="/Contact" element={<Contact />} />
 
           {/* default routes for invalid links */}

@@ -159,4 +159,16 @@
     text-align: center;
     width: 100%;
   }
+
+  /* sub-works */
+  .works-top-left {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .works-top-left .heading {
+    font-size: 3rem;
+    line-height: 1.5em;
+  }
+  .works-top-right {
+    margin-top: 20px;
+  }
 }

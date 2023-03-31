@@ -99,6 +99,7 @@
   font-weight: 200;
   letter-spacing: 1px;
   margin-bottom: 25px;
+  width: fit-content;
 }
 
 .nav-address {
@@ -827,4 +828,20 @@ label a {
 }
 .contact-right .btn-cpt:hover {
   background-color: #333;
+}
+
+/* sub-works */
+.works-top-left {
+  padding-right: 16%;
+}
+.works-top-left .heading {
+  font-size: 3.75rem;
+  line-height: 1.1em;
+}
+.works-p {
+  color: #878a8f;
+  margin-bottom: 18px;
+}
+.works-top-right {
+  margin-top: 55px;
 }
