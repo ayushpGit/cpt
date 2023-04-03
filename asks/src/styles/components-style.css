@@ -719,6 +719,7 @@ label a {
   object-fit: cover;
   pointer-events: none;
   position: absolute;
+  object-position: bottom;
   z-index: -1;
   border-radius: 5px;
   transition: 0.5s all ease-in-out;

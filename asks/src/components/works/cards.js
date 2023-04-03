@@ -9,7 +9,7 @@ const Cards = () => {
       title: "Better than hotel",
       desc: "Website development",
       category: "web",
-      img: "KRI_20230320_web",
+      img: "KRI_20230403_bth-web",
       link: "/subworks",
     },
     {
@@ -17,7 +17,7 @@ const Cards = () => {
       title: "Silver lining",
       desc: "brochure design/printing",
       category: "print",
-      img: "KRI_20230314_brochure design",
+      img: "KRI_20230403_silverlining",
       link: "/subworks",
     },
     {
@@ -25,7 +25,7 @@ const Cards = () => {
       title: "Better than hotel",
       desc: "App",
       category: "app",
-      img: "KRI_20230316_app",
+      img: "KRI_20230403_BTH",
       link: "/subworks",
     },
     {
@@ -33,7 +33,7 @@ const Cards = () => {
       title: "Posts",
       desc: "Social Media Posts",
       category: "dm",
-      img: "KRI_20230321_posts1",
+      img: "KRI_20230402_ig-post",
       link: "/subworks",
     },
   ];
