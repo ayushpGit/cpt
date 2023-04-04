@@ -5,7 +5,7 @@ const Cards = () => {
   const cardItems = [
     // add filter
     {
-      date: "2022",
+      date: "2023",
       title: "Silver lining",
       desc: "brochure design/printing",
       category: "print",
@@ -13,15 +13,15 @@ const Cards = () => {
       link: "/subworks",
     },
     {
-      date: "2016",
-      title: "Posts",
+      date: "2023",
+      title: "Hivelaya",
       desc: "Social Media Posts",
       category: "dm",
       img: "KRI_20230402_ig-post",
       link: "/subworks",
     },
     {
-      date: "2023",
+      date: "2022",
       title: "Better than hotel",
       desc: "Website development",
       category: "web",
@@ -29,17 +29,35 @@ const Cards = () => {
       link: "/subworks",
     },
     {
-      date: "2023",
+      date: "2022",
       title: "Better than hotel",
       desc: "Mobile App",
       category: "app",
       img: "KRI_20230404_BTH",
       link: "/subworks",
     },
+    {
+      date: "2015",
+      title: "Learn Newari",
+      desc: "Mobile App",
+      category: "app",
+      img: "KRI_20230404_nepal bhasa",
+      link: "/subworks",
+    },
+    {
+      date: "2016",
+      title: "My Fit",
+      desc: "Mobile App",
+      category: "app",
+      img: "KRI_20230404_my-fit",
+      link: "/subworks",
+    },
   ];
+  const sortCardItems = [...cardItems].sort((a, b) => b.date - a.date);
+  
   return (
     <div className="works-cards row">
-      {cardItems.map((cardItem) => (
+      {sortCardItems.map((cardItem) => (
         <a href={cardItem.link} className="col-md-6">
           <div className="works-card">
             <img
