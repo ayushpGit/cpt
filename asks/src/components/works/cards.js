@@ -5,14 +5,6 @@ const Cards = () => {
   const cardItems = [
     // add filter
     {
-      date: "2023",
-      title: "Better than hotel",
-      desc: "Website development",
-      category: "web",
-      img: "KRI_20230403_bth-web",
-      link: "/subworks",
-    },
-    {
       date: "2022",
       title: "Silver lining",
       desc: "brochure design/printing",
@@ -21,19 +13,27 @@ const Cards = () => {
       link: "/subworks",
     },
     {
-      date: "2023",
-      title: "Better than hotel",
-      desc: "App",
-      category: "app",
-      img: "KRI_20230403_BTH",
-      link: "/subworks",
-    },
-    {
       date: "2016",
       title: "Posts",
       desc: "Social Media Posts",
       category: "dm",
       img: "KRI_20230402_ig-post",
+      link: "/subworks",
+    },
+    {
+      date: "2023",
+      title: "Better than hotel",
+      desc: "Website development",
+      category: "web",
+      img: "KRI_20230403_bth-web",
+      link: "/subworks",
+    },
+    {
+      date: "2023",
+      title: "Better than hotel",
+      desc: "Mobile App",
+      category: "app",
+      img: "KRI_20230404_BTH",
       link: "/subworks",
     },
   ];
