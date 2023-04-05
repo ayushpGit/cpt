@@ -67,6 +67,14 @@ const SubWorks = () => {
               Wireframe Kit, User Interface Kit and Web Wireframe Kit.
             </p>
           </div>
+          {/* bottom */}
+          <div className="col-12 pt-5">
+            <img
+              className="subworks-img"
+              src={require("../assets/images/KRI_20230405_nepal bhasa-inside.jpg")}
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <Footer />
