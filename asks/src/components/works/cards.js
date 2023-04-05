@@ -9,7 +9,7 @@ const Cards = () => {
       title: "Silver lining",
       desc: "brochure design/printing",
       category: "print",
-      img: "KRI_20230403_silverlining",
+      img: "KRI_20230405_silverlining-small",
       link: "/subworks",
     },
     {
@@ -17,7 +17,7 @@ const Cards = () => {
       title: "Hivelaya",
       desc: "Social Media Posts",
       category: "dm",
-      img: "KRI_20230402_ig-post",
+      img: "KRI_20230405_ig-post-small",
       link: "/subworks",
     },
     {
@@ -25,7 +25,7 @@ const Cards = () => {
       title: "Better than hotel",
       desc: "Website development",
       category: "web",
-      img: "KRI_20230403_bth-web",
+      img: "KRI_20230405_bth-web-small",
       link: "/subworks",
     },
     {
@@ -33,7 +33,7 @@ const Cards = () => {
       title: "Better than hotel",
       desc: "Mobile App",
       category: "app",
-      img: "KRI_20230404_BTH",
+      img: "KRI_20230405_BTH-small",
       link: "/subworks",
     },
     {
@@ -41,7 +41,7 @@ const Cards = () => {
       title: "Learn Newari",
       desc: "Mobile App",
       category: "app",
-      img: "KRI_20230404_nepal bhasa",
+      img: "KRI_20230405_nepal bhasa-small",
       link: "/subworks",
     },
     {
@@ -49,12 +49,12 @@ const Cards = () => {
       title: "My Fit",
       desc: "Mobile App",
       category: "app",
-      img: "KRI_20230404_my-fit",
+      img: "KRI_20230405_my-fit-small",
       link: "/subworks",
     },
   ];
   const sortCardItems = [...cardItems].sort((a, b) => b.date - a.date);
-  
+
   return (
     <div className="works-cards row">
       {sortCardItems.map((cardItem) => (
