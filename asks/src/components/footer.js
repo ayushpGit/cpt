@@ -23,7 +23,11 @@ const footer = () => {
           <div className="col-md-5">
             <a href="tel:9802888836">{number}</a>
             <br></br>
-            <a href="https://goo.gl/maps/wU61HnMv2ZzbipiNA" target="_blank">
+            <a
+              href="https://goo.gl/maps/wU61HnMv2ZzbipiNA"
+              target="_blank"
+              rel="noreferrer"
+            >
               {location}
             </a>
           </div>

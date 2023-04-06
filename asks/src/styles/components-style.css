@@ -261,7 +261,8 @@ label[for="ham-menu"] {
 .heading {
   line-height: 1.5em;
   font-family: graphik-reg;
-  font-weight: bold;
+  font-weight: bold; 
+  display: inline-block;
   /* word-spacing: 0.5em; */
   /* letter-spacing: 0.1em; */
 }

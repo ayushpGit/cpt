@@ -22,7 +22,7 @@ const Contact = () => {
             <div className="row socials d-md-block d-none">
               {/* find us */}
               <div className="col-md-4">
-                <a className="heading"> Find us</a>
+                <b className="heading pt-3"> Find us</b>
                 <br></br>
                 <a
                   href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
@@ -58,6 +58,7 @@ const Contact = () => {
                   className="heading"
                   href="https://goo.gl/maps/wU61HnMv2ZzbipiNA"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   khusibun, kathmandu, nepal
                 </a>
@@ -126,7 +127,7 @@ const Contact = () => {
           <div className="row socials d-md-none d-block">
             {/* find us */}
             <div className="col-md-4">
-              <a className="heading"> Find us</a>
+              <b className="heading pt-3"> Find us</b>
               <br></br>
               <a
                 href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
@@ -163,6 +164,7 @@ const Contact = () => {
                 className="heading"
                 href="https://goo.gl/maps/wU61HnMv2ZzbipiNA"
                 target="_blank"
+                rel="noreferrer"
               >
                 khusibun, kathmandu, nepal
               </a>
