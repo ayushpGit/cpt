@@ -99,16 +99,17 @@ const Routing = () => {
           <Route exact path="/nav" element={<Nav />} />
           <Route exact path="/playground" element={<Play />} />
           <Route exact path="/foot" element={<Foot />} />
+
           {/* mains */}
           <Route
             exact
             path="/"
             element={<Home dragEnter={dragEnter} dragLeave={defaultLeave} />}
           />
-          <Route exact path="/Contact" element={<Contact />} />
           <Route exact path="/works" element={<Works />} />
           <Route exact path="/subworks" element={<SubWorks />} />
-          <Route exact path="/work/:userId" component={Play} />
+          <Route exact path="/Contact" element={<Contact />} />
+
           {/* default routes for invalid links */}
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>

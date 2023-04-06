@@ -78,12 +78,12 @@ const Cards = () => {
       link: "/playground",
     },
   ];
-  // const sortCardItems = [...cardItems].sort((a, b) => b.date - a.date);
+  const sortCardItems = [...cardItems].sort((a, b) => b.date - a.date);
 
   return (
     <div className="works-cards row">
-      {cardItems.map((cardItem, index) => (
-        <a href={`/work/${index + 1}`} className="col-md-6">
+      {sortCardItems.map((cardItem, index) => (
+        <a href={cardItem.link} className="col-md-6">
           <div className="works-card">
             <img
               className="works-card-img"
