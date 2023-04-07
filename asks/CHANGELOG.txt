@@ -45,6 +45,6 @@ v1.1.2
 
 
 todo:
-add inside page of works page
+make inside page of works page dynamic
 add react scroll
 https://www.npmjs.com/package/smooth-scrollbar-react

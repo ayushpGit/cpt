@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Cards = () => {
-  const cardItems = [
+  const workItems = [
     // add filter
     {
       date: "2023",
@@ -78,11 +78,11 @@ const Cards = () => {
       link: "/playground",
     },
   ];
-  const sortCardItems = [...cardItems].sort((a, b) => b.date - a.date);
+  const sortworkItems = [...workItems].sort((a, b) => b.date - a.date);
 
   return (
     <div className="works-cards row">
-      {sortCardItems.map((cardItem, index) => (
+      {sortworkItems.map((cardItem, index) => (
         <a href={cardItem.link} className="col-md-6">
           <div className="works-card">
             <img

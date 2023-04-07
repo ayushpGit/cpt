@@ -108,7 +108,9 @@ const Routing = () => {
           />
           <Route exact path="/works" element={<Works />} />
           <Route exact path="/subworks" element={<SubWorks />} />
-          <Route exact path="/Contact" element={<Contact />} />
+          <Route exact path="/contact" element={<Contact />} />
+
+          <Route exact path="/works/:workId" element={<Play />} />
 
           {/* default routes for invalid links */}
           {/* <Route path="*" element={<NotFound />} /> */}
