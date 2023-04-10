@@ -83,7 +83,7 @@ const Cards = () => {
   return (
     <div className="works-cards row">
       {sortworkItems.map((cardItem, index) => (
-        <a href={cardItem.link} className="col-md-6">
+        <div className="col-md-6">
           <div className="works-card">
             <img
               className="works-card-img"
@@ -95,13 +95,13 @@ const Cards = () => {
               <h1 className="heading mt-3">
                 {cardItem.title} - {cardItem.titleDesc}
               </h1>
-              <p className="works-card-learn sub-heading mt-4">
+              {/* <p className="works-card-learn sub-heading mt-4">
                 Learn More
                 <AiOutlineArrowRight />
-              </p>
+              </p> */}
             </div>
           </div>
-        </a>
+        </div>
       ))}
     </div>
   );
