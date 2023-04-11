@@ -1,5 +1,6 @@
 import React from "react";
 import video from "../../assets/videos/video.mp4";
+import { Link } from "react-router-dom";
 
 const landing = () => {
   return (
@@ -20,14 +21,14 @@ const landing = () => {
       </span>
       <div className="row link-div">
         <div className="col-md-6 text-md-center">
-          <a href="/works" className="link-button white">
+          <Link to="/works" className="link-button white">
             digital portfolio
-          </a>
+          </Link>
         </div>
         <div className="col-md-6 text-md-center">
-          <a href="/contact" className="link-button white">
+          <Link to="/contact" className="link-button white">
             contact us
-          </a>
+          </Link>
         </div>
       </div>
     </section>

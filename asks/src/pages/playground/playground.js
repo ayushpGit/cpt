@@ -1,13 +1,14 @@
 import "./playground.css";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Playground = ({ workItems }) => {
   return (
     <div className="works-cards row">
       {workItems.map((workItem, index) => (
-        <a href={workItem.link} className="col-md-6">
+        <Link to={workItem.link} className="col-md-6">
           <div className="works-card">
             <img
               className="works-card-img"
@@ -25,7 +26,7 @@ const Playground = ({ workItems }) => {
               </p>
             </div>
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   );

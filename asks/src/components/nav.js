@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const menuItems = [
@@ -29,14 +30,14 @@ const Nav = () => {
   ];
   return (
     <nav>
-      <a href="/" className="col nav-logo">
+      <Link to="/" className="col nav-logo">
         <p className="nav-crocus">crocus pearl</p>
         <p className="nav-tech">technologies</p>
-      </a>
+      </Link>
       <div className="nav-right">
-        <a className="nav-works" href="/works">
+        <Link className="nav-works" to="/works">
           Works
-        </a>
+        </Link>
         <input type="checkbox" id="ham-menu" />
         <label htmlFor="ham-menu">
           <div id="menu-icon">
@@ -53,47 +54,47 @@ const Nav = () => {
 
             <div className="nav-container-2">
               {menuItems.map((menuItem) => (
-                <a className="menu-items" href={menuItem.link}>
+                <Link className="menu-items" to={menuItem.link}>
                   {menuItem.name}
-                </a>
+                </Link>
               ))}
             </div>
 
             <div className="nav-container-3">
               <p className="nav-address sub-heading">nepal</p>
               <p className="nav-address">khusibun, kathmandu</p>
-              <a href="mailto:info@crocuspearl.com" className="nav-email">
+              <Link to="mailto:info@crocuspearl.com" className="nav-email">
                 info@crocuspearl.com
-              </a>
-              <a href="/" className="nav-privacy">
+              </Link>
+              <Link to="/" className="nav-privacy">
                 Privacy Policy
-              </a>
+              </Link>
               <div className="nav-socials">
                 <p className="sub-heading">Social</p>
-                <a
-                  href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
+                <Link
+                  to="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
                   // className="link-button"
                   target={"_blank"}
                   rel={"noreferrer"}
                 >
                   Facebook
-                </a>
-                <a
-                  href="https://www.instagram.com/crocus.pearl/"
+                </Link>
+                <Link
+                  to="https://www.instagram.com/crocus.pearl/"
                   // className="link-button"
                   target={"_blank"}
                   rel={"noreferrer"}
                 >
                   Instagram
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/crocus-pearl-technologies-pvt-ltd/mycompany/"
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/company/crocus-pearl-technologies-pvt-ltd/mycompany/"
                   // className="link-button"
                   target={"_blank"}
                   rel={"noreferrer"}
                 >
                   Linkedin
-                </a>
+                </Link>
               </div>
             </div>
           </div>
