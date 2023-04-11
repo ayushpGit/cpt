@@ -97,7 +97,7 @@ const Routing = () => {
         <Routes>
           {/* home route */}
           <Route exact path="/nav" element={<Nav />} />
-          {/* <Route exact path="/playground" element={<Play />} /> */}
+          <Route exact path="/playground" element={<Play />} />
           <Route exact path="/foot" element={<Foot />} />
 
           {/* mains */}
@@ -107,10 +107,10 @@ const Routing = () => {
             element={<Home dragEnter={dragEnter} dragLeave={defaultLeave} />}
           />
           <Route exact path="/works" element={<Works />} />
-          <Route exact path="/subworks" element={<SubWorks />} />
+          {/* <Route exact path="/subworks" element={<SubWorks />} /> */}
           <Route exact path="/contact" element={<Contact />} />
 
-          <Route exact path="/works/:id" element={<Play />} />
+          <Route exact path="/works/:id" element={<SubWorks />} />
 
           {/* default routes for invalid links */}
           {/* <Route path="*" element={<NotFound />} /> */}
