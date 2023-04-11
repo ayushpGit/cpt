@@ -97,7 +97,7 @@ const Routing = () => {
         <Routes>
           {/* home route */}
           <Route exact path="/nav" element={<Nav />} />
-          <Route exact path="/playground" element={<Play />} />
+          {/* <Route exact path="/playground" element={<Play />} /> */}
           <Route exact path="/foot" element={<Foot />} />
 
           {/* mains */}
@@ -110,7 +110,7 @@ const Routing = () => {
           <Route exact path="/subworks" element={<SubWorks />} />
           <Route exact path="/contact" element={<Contact />} />
 
-          <Route exact path="/works/:workId" element={<Play />} />
+          <Route exact path="/works/:id" element={<Play />} />
 
           {/* default routes for invalid links */}
           {/* <Route path="*" element={<NotFound />} /> */}

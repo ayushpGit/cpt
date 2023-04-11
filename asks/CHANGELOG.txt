@@ -52,5 +52,7 @@ https://makeschool.org/mediabook/oa/tutorials/react-fundamentals-vm0/dynamic-dat
 add react scroll
 https://www.npmjs.com/package/smooth-scrollbar-react
 
+cursor change on hovering Link/a tags: routing.js
+
 For db :
 npx json-server --watch db.json --port 8000
