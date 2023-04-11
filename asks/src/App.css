@@ -72,6 +72,14 @@ a:focus {
   font-weight: 900;
 }
 
+/* for text transform */
+.caps {
+  text-transform: uppercase !important;
+}
+.capital {
+  text-transform: capitalize !important;
+}
+
 /* Cursor */
 
 .cursor {

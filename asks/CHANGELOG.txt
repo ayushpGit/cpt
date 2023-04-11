@@ -44,15 +44,20 @@ v1.1.2
 - updated hierarchy: moved all the css files to /styles folder [except App.css]
 
 
+v1.1.3
+- removed unneeded images
+- dynamic works page done
+
+
+
 todo:
-make inside page of works page dynamic
-https://medium.com/@s.alexis/using-react-router-useparams-to-fetch-data-dynamically-13288e24ed1
-https://makeschool.org/mediabook/oa/tutorials/react-fundamentals-vm0/dynamic-data/
 
 add react scroll
 https://www.npmjs.com/package/smooth-scrollbar-react
 
 cursor change on hovering Link/a tags: routing.js
+
+need to fix image issue in sub-works
 
 For db :
 npx json-server --watch db.json --port 8000

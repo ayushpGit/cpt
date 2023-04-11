@@ -261,7 +261,7 @@ label[for="ham-menu"] {
 .heading {
   line-height: 1.5em;
   font-family: graphik-reg;
-  font-weight: bold; 
+  font-weight: bold;
   display: inline-block;
   /* word-spacing: 0.5em; */
   /* letter-spacing: 0.1em; */
@@ -844,11 +844,13 @@ label a {
 .works-p {
   color: #878a8f;
   margin-bottom: 18px;
+  white-space: pre-line;
+  vertical-align: bottom;
 }
 .works-top-right {
   margin-top: 55px;
 }
 
-.subworks-img{
+.subworks-img {
   width: 100%;
 }
