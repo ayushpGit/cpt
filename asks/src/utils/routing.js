@@ -95,22 +95,25 @@ const Routing = () => {
         ></motion.div>
 
         <Routes>
-          {/* home route */}
+          {/* essentials */}
           <Route exact path="/nav" element={<Nav />} />
-          <Route exact path="/playground" element={<Play />} />
           <Route exact path="/foot" element={<Foot />} />
+          <Route exact path="/playground" element={<Play />} />
 
-          {/* mains */}
+          {/* home */}
           <Route
             exact
             path="/"
             element={<Home dragEnter={dragEnter} dragLeave={defaultLeave} />}
           />
-          <Route exact path="/works" element={<Works />} />
-          {/* <Route exact path="/subworks" element={<SubWorks />} /> */}
-          <Route exact path="/contact" element={<Contact />} />
 
+          {/* works */}
+          <Route exact path="/works" element={<Works />} />
           <Route exact path="/works/:id" element={<SubWorks />} />
+          {/* <Route exact path="/subworks" element={<SubWorks />} /> */}
+
+          {/* Contact */}
+          <Route exact path="/contact" element={<Contact />} />
 
           {/* default routes for invalid links */}
           {/* <Route path="*" element={<NotFound />} /> */}

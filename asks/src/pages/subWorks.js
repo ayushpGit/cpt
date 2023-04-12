@@ -23,15 +23,15 @@ const SubWorks = () => {
               {/* role */}
               <h2 className="sub-heading pb-2 pt-5 caps">Our role</h2>
               <ul
-                className="bold-text small"
+                className="bold-text small capital"
                 style={{
                   padding: "0",
                 }}
               >
-                <li>Creative Direction </li>
-                <li>UX / UI</li>
-                <li>Website Design</li>
-                <li>Icon Design</li>
+                <li>
+                  Creative Direction<br/>
+                  {work.role}
+                </li>
               </ul>
               {/* client */}
               <h2 className="sub-heading pb-2 pt-5 caps">Client</h2>
@@ -48,11 +48,11 @@ const SubWorks = () => {
 
             {/* bottom */}
             <div className="col-12 pt-5">
-              {/* <img
+              <img
                 className="subworks-img"
-                src={require(`../../assets/images/${work.img}-inside.jpg`)}
+                src={require(`../assets/images/${work.img}-inside.jpg`)}
                 alt=""
-              /> */}
+              />
             </div>
           </div>
         </div>

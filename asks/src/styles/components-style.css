@@ -834,19 +834,27 @@ label a {
 }
 
 /* sub-works */
+
+.works-top-left,
+.works-top-right {
+  white-space: pre-line;
+  vertical-align: bottom;
+}
+
 .works-top-left {
   padding-right: 16%;
 }
+
 .works-top-left .heading {
   font-size: 3.75rem;
   /* line-height: 1.1em; */
 }
+
 .works-p {
   color: #878a8f;
   margin-bottom: 18px;
-  white-space: pre-line;
-  vertical-align: bottom;
 }
+
 .works-top-right {
   margin-top: 55px;
 }
