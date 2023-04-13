@@ -7,6 +7,8 @@ import useFetch from "../components/hooks/useFetch";
 const SubWorks = () => {
   const { id } = useParams();
   const { data: work, error } = useFetch("http://localhost:8000/works/" + id);
+
+  const imgs = {}
   return (
     <>
       <Nav />
@@ -29,7 +31,7 @@ const SubWorks = () => {
                 }}
               >
                 <li>
-                  Creative Direction<br/>
+                  Creative Direction<br />
                   {work.role}
                 </li>
               </ul>
@@ -48,11 +50,11 @@ const SubWorks = () => {
 
             {/* bottom */}
             <div className="col-12 pt-5">
-              <img
+              {work.img && <img
                 className="subworks-img"
                 src={require(`../assets/images/${work.img}-inside.jpg`)}
                 alt=""
-              />
+              />}
             </div>
           </div>
         </div>
