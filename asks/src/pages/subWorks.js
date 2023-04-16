@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import { useParams } from "react-router-dom";
@@ -8,7 +8,35 @@ const SubWorks = () => {
   const { id } = useParams();
   const { data: work, error } = useFetch("http://localhost:8000/works/" + id);
 
-  const imgs = {}
+  const images = [
+    {
+      id: "1",
+      img: "2023_04_12_Mockup1_Hivelaya",
+    },
+    {
+      id: "2",
+      img: "2023_04_12_Mockup2_Hivelaya",
+    },
+    {
+      id: "3",
+      img: "2023_04_12_Mockup3_Hivelaya",
+    },
+    {
+      id: "4",
+      img: "2023_04_12_Mockup1_BetterthanhotelLaptop",
+    },
+    {
+      id: "5",
+      img: "2023_04_12_Mockup2_BetterthanhotelLaptop",
+    },
+    {
+      id: "6",
+      img: "2023_04_12_Mockup3_BetterthanhotelLaptop",
+    },
+  ];
+  useEffect(() => {
+    console.log(images);
+  }, []);
   return (
     <>
       <Nav />
@@ -31,7 +59,8 @@ const SubWorks = () => {
                 }}
               >
                 <li>
-                  Creative Direction<br />
+                  Creative Direction
+                  <br />
                   {work.role}
                 </li>
               </ul>
@@ -50,11 +79,18 @@ const SubWorks = () => {
 
             {/* bottom */}
             <div className="col-12 pt-5">
-              {work.img && <img
+              <img
                 className="subworks-img"
                 src={require(`../assets/images/${work.img}-inside.jpg`)}
                 alt=""
-              />}
+              />
+              {images.map((image) => (
+                <img
+                  className="subworks-img"
+                  src={require(`../assets/images/${image.img}.jpg`)}
+                  alt=""
+                />
+              ))}
             </div>
           </div>
         </div>
