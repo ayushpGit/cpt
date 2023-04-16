@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import Cards from "../components/works/cards";
-import useFetch from "../components/hooks/useFetch";
+import useFetch from "../components/usefuls/useFetch";
 
 const Works = () => {
   const { data: workItems, error } = useFetch("http://localhost:8000/works");

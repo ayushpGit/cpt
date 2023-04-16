@@ -17,6 +17,8 @@ import Works from "../pages/works";
 import SubWorks from "../pages/subWorks";
 import Contact from "../pages/contact";
 
+import ToTop from "../components/usefuls/scrollToTop";
+
 const Routing = () => {
   const path = window.location.pathname;
 
@@ -85,6 +87,7 @@ const Routing = () => {
   };
   return (
     <Router>
+      <ToTop/>
       {/* body: */}
       <div className="body">
         {/* cursor */}

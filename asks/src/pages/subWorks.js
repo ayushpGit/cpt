@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import { useParams } from "react-router-dom";
-import useFetch from "../components/hooks/useFetch";
+import useFetch from "../components/usefuls/useFetch";
 
 const SubWorks = () => {
   const { id } = useParams();
@@ -34,9 +34,7 @@ const SubWorks = () => {
       img: "2023_04_12_Mockup3_BetterthanhotelLaptop",
     },
   ];
-  useEffect(() => {
-    console.log(images);
-  }, []);
+
   return (
     <>
       <Nav />
@@ -84,6 +82,7 @@ const SubWorks = () => {
                 src={require(`../assets/images/${work.img}-inside.jpg`)}
                 alt=""
               />
+              {/* images from the data dictionary */}
               {images.map((image) => (
                 <img
                   className="subworks-img"
