@@ -16,6 +16,7 @@ import Home from "../pages/home";
 import Works from "../pages/works";
 import SubWorks from "../pages/subWorks";
 import Contact from "../pages/contact";
+import NotFound from "../pages/notFound";
 
 import ToTop from "../components/usefuls/scrollToTop";
 
@@ -119,7 +120,7 @@ const Routing = () => {
           <Route exact path="/contact" element={<Contact />} />
 
           {/* default routes for invalid links */}
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
