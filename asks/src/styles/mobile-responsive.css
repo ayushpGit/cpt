@@ -118,7 +118,7 @@
   /* works page */
   .works-card-img {
     width: 96%;
-    height: 61vh !important;
+    /* height: 96% !important; */
   }
   .works-card {
     width: 100%;

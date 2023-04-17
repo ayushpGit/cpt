@@ -60,4 +60,4 @@ https://www.npmjs.com/package/smooth-scrollbar-react
 
 
 For db :
-npx json-server --watch db.json --port 800011
+npx json-server --watch db.json --port 8000
