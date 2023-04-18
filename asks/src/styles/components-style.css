@@ -748,3 +748,11 @@ label a {
   visibility: visible;
   opacity: 1;
 }
+
+form input:invalid:focus ~ label {
+  color: #f94f6d !important;
+}
+
+form input:invalid:focus {
+  border-color: #f94f6d;
+}

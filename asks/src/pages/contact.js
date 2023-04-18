@@ -4,7 +4,13 @@ import Nav from "../components/nav";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 
+import { useRef } from "react";
+
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = () => {
+    
+  };
   return (
     <>
       <Nav />
@@ -70,25 +76,12 @@ const Contact = () => {
           <div className="col-lg-4 col-md-6 contact-right">
             <h1 className="d-md-block d-none">Say hello</h1>
 
-            {/* <form className="demoForm">
-              <div className="form-group">
-                <label htmlFor="email">Email address</label>
-                <input type="email" className="form-control" name="email" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  className="form-control"
-                  name="password"
-                />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Sign up
-              </button>
-            </form> */}
-
-            <form action="" className="container">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              action=""
+              className="container"
+            >
               <div className="row">
                 <div class="input-field col-md-6">
                   <input type="text" id="name" required />
