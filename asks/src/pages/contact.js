@@ -5,11 +5,29 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 
 import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
-  const sendEmail = () => {
-    
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_oadabzp",
+        "template_jknjdtb",
+        form.current,
+        "CSmTA7RDEO-rPSCX3"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
   return (
     <>
@@ -83,36 +101,42 @@ const Contact = () => {
               className="container"
             >
               <div className="row">
-                <div class="input-field col-md-6">
-                  <input type="text" id="name" required />
-                  <label className="form-label" for="name">
+                <div className="input-field col-md-6">
+                  <input type="text" id="name" name="user_name" required />
+                  <label className="form-label" htmlFor="name">
                     Your name
                   </label>
                 </div>
-                <div class="input-field col-md-6">
-                  <input type="text" id="email" required />
-                  <label className="form-label" for="email">
+                <div className="input-field col-md-6">
+                  <input type="text" id="email" name="user_email" required />
+                  <label className="form-label" htmlFor="email">
                     Email
                   </label>
                 </div>
               </div>
               <div className="row">
-                <div class="input-field col-12">
-                  <input type="text" id="subject" required />
-                  <label className="form-label" for="subject">
+                <div className="input-field col-12">
+                  <input type="text" id="subject" name="subject" required />
+                  <label className="form-label" htmlFor="subject">
                     Subject
                   </label>
                 </div>
               </div>
               <div className="row">
-                <div class="input-field col-12">
-                  <textarea type="text" id="message" rows="1" required />
-                  <label className="form-label" for="message">
+                <div className="input-field col-12">
+                  <textarea
+                    type="text"
+                    id="message"
+                    name="message"
+                    rows="1"
+                    required
+                  />
+                  <label className="form-label" htmlFor="message">
                     Message
                   </label>
                 </div>
               </div>
-              <button type="submit" class="btn-cpt link-button mt-5">
+              <button type="submit" className="btn-cpt link-button mt-5">
                 Submit
               </button>
             </form>

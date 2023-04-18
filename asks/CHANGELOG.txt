@@ -57,6 +57,8 @@ https://www.npmjs.com/package/smooth-scrollbar-react
 
 - cursor change on hovering Link/a tags: routing.js
 
+- add toaster in contact form
+
 
 
 For db :
