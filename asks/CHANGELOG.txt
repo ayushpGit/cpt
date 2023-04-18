@@ -49,7 +49,6 @@ v1.1.3
 - dynamic works page done
 - page render on top
 - images in sub-works
-- npm i react-pacman
 
 todo:
 - add react scroll

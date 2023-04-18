@@ -123,6 +123,7 @@
   .works-card {
     width: 100%;
     height: 61vh !important;
+    min-height: 515px;
   }
   .works-card-content {
     padding: 30px;
