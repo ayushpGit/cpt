@@ -6,6 +6,9 @@
   }
 
   /* nav */
+  nav {
+    height: 100px;
+  }
   .nav-logo {
     position: relative;
     padding-left: 15px;

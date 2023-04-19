@@ -11,18 +11,18 @@ const Nav = () => {
       name: "Works",
       link: "/works",
     },
-    {
-      name: "Case Studies",
-      link: "/",
-    },
-    {
-      name: "Expertise",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/",
-    },
+    // {
+    //   name: "Case Studies",
+    //   link: "/",
+    // },
+    // {
+    //   name: "Expertise",
+    //   link: "/",
+    // },
+    // {
+    //   name: "About",
+    //   link: "/",
+    // },
     {
       name: "Contact",
       link: "/contact",
@@ -48,7 +48,7 @@ const Nav = () => {
         </label>
         <div className="ham-menu">
           <div className="overlay__content">
-            <div className="nav-container-1">
+            <div className="nav-container-1 black">
               <p>menu</p>
             </div>
 
@@ -61,8 +61,14 @@ const Nav = () => {
             </div>
 
             <div className="nav-container-3">
-              <p className="nav-address sub-heading">nepal</p>
-              <p className="nav-address">khusibun, kathmandu</p>
+              <a
+                href="https://goo.gl/maps/wU61HnMv2ZzbipiNA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className="nav-address sub-heading">nepal</p>
+                <p className="nav-address">khusibun, kathmandu</p>
+              </a>
               <Link to="mailto:info@crocuspearl.com" className="nav-email">
                 info@crocuspearl.com
               </Link>

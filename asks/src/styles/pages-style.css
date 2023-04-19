@@ -1,21 +1,25 @@
 /* ------------ HOME ------------ */
 
+section#top {
+  min-height: 90vh;
+}
+
 .home-title {
   font-family: "graphik-light";
   font-size: 78px;
   line-height: 100px;
   display: table;
   margin: auto;
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 
 .link-div {
-  margin-top: 16vh;
+  margin-top: 10vh;
   /* text-align: center; */
 }
 
 #services {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   /* margin-bottom: 100px; */
   min-height: 100vh;
 }
@@ -149,6 +153,6 @@
   font-family: "graphik-reg";
 }
 
-.notFound .link-button{
+.notFound .link-button {
   font-weight: bold;
 }

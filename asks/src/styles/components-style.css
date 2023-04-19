@@ -103,7 +103,7 @@
 }
 
 .nav-address {
-  color: #000;
+  /* color: #000; */
   font-size: 12px;
   line-height: 2em;
   font-weight: 400;
@@ -532,6 +532,9 @@ nav {
   color: #eee !important;
 }
 
+.black {
+  color: #000 !important;
+}
 /* Responsive Nav */
 
 @media screen and (max-width: 990px) {
@@ -755,4 +758,12 @@ form input:invalid:focus ~ label {
 
 form input:invalid:focus {
   border-color: #f94f6d;
+}
+
+form input:valid:focus ~ label {
+  color: #4ab382 !important;
+}
+
+form input:valid:focus {
+  border-color: #4ab382;
 }

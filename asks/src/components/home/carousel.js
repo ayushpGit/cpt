@@ -56,7 +56,7 @@ export default function Carousel() {
             <div className="container-fluid">
               <div className="row ">
                 <div className="col-md-1 carousel-num">{service.num}</div>
-                <div className="col-md-4">
+                <div className="col-lg-5">
                   <h2 className="service-title">&lt;{service.title}&gt;</h2>
                   <p>{service.desc}</p>
                 </div>

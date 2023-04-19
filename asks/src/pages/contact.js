@@ -7,11 +7,13 @@ import { GrInstagram } from "react-icons/gr";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_oadabzp",
@@ -22,15 +24,47 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("Message Received!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
         },
         (error) => {
           console.log(error.text);
+          toast.error("Error Occured, Try again.", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
         }
       );
     e.target.reset();
   };
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <Nav />
       <div className="container">
         <div className="row contact-spacing">
@@ -108,7 +142,7 @@ const Contact = () => {
                   </label>
                 </div>
                 <div className="input-field col-md-6">
-                  <input type="text" id="email" name="user_email" required />
+                  <input type="email" id="email" name="user_email" required />
                   <label className="form-label" htmlFor="email">
                     Email
                   </label>
