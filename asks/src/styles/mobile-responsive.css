@@ -7,15 +7,15 @@
 
   /* nav */
   nav {
-    height: 100px;
+    height: 140px;
   }
   .nav-logo {
     position: relative;
     padding-left: 15px;
   }
   .nav-crocus {
-    padding: 25px 0px 0px 0px;
     font-size: 30px;
+    padding: 25px 0 0 0;
   }
   .nav-tech {
     padding: 0px 0px 0px 2px;

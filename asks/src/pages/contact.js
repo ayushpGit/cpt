@@ -67,7 +67,7 @@ const Contact = () => {
       />
       <Nav />
       <div className="container">
-        <div className="row contact-spacing">
+        <div className="contact-spacing">
           <div className="col-lg-8 col-md-6 contact-left">
             <h1>
               <span className="font-bold">That idea you have,</span>
