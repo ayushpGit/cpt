@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import { useParams } from "react-router-dom";
@@ -11,29 +11,47 @@ const SubWorks = () => {
   const images = [
     {
       id: "1",
+      dbId: "5",
       img: "2023_04_12_Mockup1_Hivelaya",
     },
     {
       id: "2",
+      dbId: "5",
       img: "2023_04_12_Mockup2_Hivelaya",
     },
     {
       id: "3",
+      dbId: "5",
       img: "2023_04_12_Mockup3_Hivelaya",
     },
     {
       id: "4",
+      dbId: "4",
       img: "2023_04_12_Mockup1_BetterthanhotelLaptop",
     },
     {
       id: "5",
+      dbId: "4",
       img: "2023_04_12_Mockup2_BetterthanhotelLaptop",
     },
     {
       id: "6",
+      dbId: "4",
       img: "2023_04_12_Mockup3_BetterthanhotelLaptop",
     },
   ];
+  const [real, setReal] = useState([]);
+
+  useEffect(() => {
+    let realArr = [];
+    {
+      images.map((image) =>
+        id === image.dbId ? realArr.push(`${image.img}`) : console.log("wow")
+      );
+    }
+    // setReal( arr => [...arr, `${image.img}`]);
+    console.log(realArr)
+  }, []);
 
   return (
     <>
@@ -83,13 +101,24 @@ const SubWorks = () => {
                 alt=""
               />
               {/* images from the data dictionary */}
-              {images.map((image) => (
+              {/* {images.map((image) => (
+                {(images.id)===id ?
                 <img
                   className="subworks-img"
                   src={require(`../assets/images/${image.img}.jpg`)}
                   alt=""
+                />:"wow"
+              }
+              ))} */}
+              {/* {images[3].id === id ? (
+                <img
+                  className="subworks-img"
+                  src={require(`../assets/images/2023_04_12_Mockup1_BetterthanhotelLaptop.jpg`)}
+                  alt=""
                 />
-              ))}
+              ) : (
+                "wow"
+              )} */}
             </div>
           </div>
         </div>
