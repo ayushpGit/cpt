@@ -42,25 +42,14 @@ const SubWorks = () => {
   ];
   const [real, setReal] = useState([]);
 
-  let realArr = [];
   useEffect(() => {
     images.map((image) =>
       id === image.dbId
         ? setReal((real) => [...real, image.img])
         : console.log("wow")
     );
-    console.log(realArr);
-    console.log("Real Array " + real);
   }, []);
 
-  // {
-  //   images.map((image) =>
-  //     id === image.dbId ? realArr.push(`${image.img}`) : console.log("wow")
-  //   );
-  // }
-  // useEffect(() => {
-  // realArr.map((realAr) => setReal((real) => [...real, realAr]));
-  // }, []);
   return (
     <>
       <Nav />
