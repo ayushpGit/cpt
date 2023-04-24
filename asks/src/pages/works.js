@@ -5,7 +5,7 @@ import Cards from "../components/works/cards";
 import useFetch from "../components/usefuls/useFetch";
 
 const Works = () => {
-  const { data: workItems, error } = useFetch("http://localhost:8001/works");
+  const { data: workItems, error } = useFetch("http://167.235.247.244:8001/works");
 
   return (
     <>
