@@ -6,7 +6,7 @@ import useFetch from "../components/usefuls/useFetch";
 
 const SubWorks = () => {
   const { id } = useParams();
-  const { data: work, error } = useFetch("http://localhost:8000/works/" + id);
+  const { data: work, error } = useFetch("http://localhost:8001/works/" + id);
 
   const images = [
     {
