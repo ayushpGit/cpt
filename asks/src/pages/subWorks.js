@@ -42,17 +42,25 @@ const SubWorks = () => {
   ];
   const [real, setReal] = useState([]);
 
+  let realArr = [];
   useEffect(() => {
-    let realArr = [];
-    {
-      images.map((image) =>
-        id === image.dbId ? realArr.push(`${image.img}`) : console.log("wow")
-      );
-    }
-    // setReal( arr => [...arr, `${image.img}`]);
-    console.log(realArr)
+    images.map((image) =>
+      id === image.dbId
+        ? setReal((real) => [...real, image.img])
+        : console.log("wow")
+    );
+    console.log(realArr);
+    console.log("Real Array " + real);
   }, []);
 
+  // {
+  //   images.map((image) =>
+  //     id === image.dbId ? realArr.push(`${image.img}`) : console.log("wow")
+  //   );
+  // }
+  // useEffect(() => {
+  // realArr.map((realAr) => setReal((real) => [...real, realAr]));
+  // }, []);
   return (
     <>
       <Nav />
@@ -101,6 +109,13 @@ const SubWorks = () => {
                 alt=""
               />
               {/* images from the data dictionary */}
+              {real.map((image) => (
+                <img
+                  className="subworks-img"
+                  src={require(`../assets/images/${image}.jpg`)}
+                  alt=""
+                />
+              ))}
               {/* {images.map((image) => (
                 {(images.id)===id ?
                 <img
@@ -110,15 +125,6 @@ const SubWorks = () => {
                 />:"wow"
               }
               ))} */}
-              {/* {images[3].id === id ? (
-                <img
-                  className="subworks-img"
-                  src={require(`../assets/images/2023_04_12_Mockup1_BetterthanhotelLaptop.jpg`)}
-                  alt=""
-                />
-              ) : (
-                "wow"
-              )} */}
             </div>
           </div>
         </div>
