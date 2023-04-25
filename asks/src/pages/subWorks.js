@@ -39,6 +39,22 @@ const SubWorks = () => {
       dbId: "4",
       img: "2023_04_12_Mockup3_BetterthanhotelLaptop",
     },
+    {
+      id: "7",
+      dbId: "1",
+      img: "2023_04_12_Mockup1_MobileMyFit",
+    },
+    {
+      id: "8",
+      dbId: "1",
+      img: "2023_04_12_Mockup2_MobileMyFit",
+    },
+    {
+      id: "9",
+      dbId: "1",
+      img: "2023_04_12_Mockup3_MobileMyFit",
+    },
+    
   ];
   const [real, setReal] = useState([]);
 
