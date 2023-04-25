@@ -9,6 +9,7 @@ const SubWorks = () => {
   const { data: work, error } = useFetch("http://167.235.247.244:8001/works/" + id);
 
   const images = [
+    // 5
     {
       dbId: "5",
       img: "2023_04_12_Mockup1_Hivelaya",
@@ -21,6 +22,7 @@ const SubWorks = () => {
       dbId: "5",
       img: "2023_04_12_Mockup3_Hivelaya",
     },
+    // 4
     {
       dbId: "4",
       img: "2023_04_12_Mockup1_BetterthanhotelLaptop",
@@ -33,6 +35,20 @@ const SubWorks = () => {
       dbId: "4",
       img: "2023_04_12_Mockup3_BetterthanhotelLaptop",
     },
+    // 3
+    {
+      dbId: "3",
+      img: "2023_04_12_Mockup1_MobileBetterthanhotel",
+    },
+    {
+      dbId: "3",
+      img: "2023_04_12_Mockup2_MobileBetterthanhotel",
+    },
+    {
+      dbId: "3",
+      img: "2023_04_12_Mockup3_MobileBetterthanhotel",
+    },
+    // 2
     {
       dbId: "2",
       img: "2023_04_12_Mockup1_MobileLearnNewar",
@@ -45,6 +61,7 @@ const SubWorks = () => {
       dbId: "2",
       img: "2023_04_12_Mockup3_MobileLearnNewar",
     },
+    // 1
     {
       dbId: "1",
       img: "2023_04_12_Mockup1_MobileMyFit",
@@ -57,7 +74,7 @@ const SubWorks = () => {
       dbId: "1",
       img: "2023_04_12_Mockup3_MobileMyFit",
     },
-    
+
   ];
   const [real, setReal] = useState([]);
 
