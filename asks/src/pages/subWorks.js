@@ -10,47 +10,50 @@ const SubWorks = () => {
 
   const images = [
     {
-      id: "1",
       dbId: "5",
       img: "2023_04_12_Mockup1_Hivelaya",
     },
     {
-      id: "2",
       dbId: "5",
       img: "2023_04_12_Mockup2_Hivelaya",
     },
     {
-      id: "3",
       dbId: "5",
       img: "2023_04_12_Mockup3_Hivelaya",
     },
     {
-      id: "4",
       dbId: "4",
       img: "2023_04_12_Mockup1_BetterthanhotelLaptop",
     },
     {
-      id: "5",
       dbId: "4",
       img: "2023_04_12_Mockup2_BetterthanhotelLaptop",
     },
     {
-      id: "6",
       dbId: "4",
       img: "2023_04_12_Mockup3_BetterthanhotelLaptop",
     },
     {
-      id: "7",
+      dbId: "2",
+      img: "2023_04_12_Mockup1_MobileLearnNewar",
+    },
+    {
+      dbId: "2",
+      img: "2023_04_12_Mockup2_MobileLearnNewar",
+    },
+    {
+      dbId: "2",
+      img: "2023_04_12_Mockup3_MobileLearnNewar",
+    },
+    {
       dbId: "1",
       img: "2023_04_12_Mockup1_MobileMyFit",
     },
     {
-      id: "8",
       dbId: "1",
       img: "2023_04_12_Mockup2_MobileMyFit",
     },
     {
-      id: "9",
       dbId: "1",
       img: "2023_04_12_Mockup3_MobileMyFit",
     },
