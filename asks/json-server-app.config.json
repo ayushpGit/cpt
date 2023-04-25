@@ -1,0 +1,10 @@
+{
+  apps : [
+    {
+      name      : "json-server-app",
+      script    : "npx",
+      interpreter: "none",
+      args: "json-server --watch db.json"
+    }
+  ]
+}
