@@ -23,7 +23,7 @@
     margin: 0px 70px 0px 0px;
   }
   .ham-menu {
-    right: 0vw;
+    right: 0.6vw;
   }
   label[for="ham-menu"] {
     top: 37px;
@@ -33,6 +33,10 @@
   }
   section#top {
     min-height: 85vh;
+  }
+  .menu-items {
+    font-size: 40px;
+    line-height: 0.7em;
   }
 
   /* landing */
@@ -74,7 +78,7 @@
     font-size: 4rem !important;
   }
   h1.heading {
-    font-size: 25px !important;
+    font-size: 22px !important;
   }
   .works-card-content {
     padding: 40px;
