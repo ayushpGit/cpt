@@ -67,8 +67,8 @@ const Contact = () => {
       />
       <Nav />
       <div className="container">
-        <div className="contact-spacing">
-          <div className="col-lg-8 col-md-6 contact-left">
+        <div className="contact-spacing row">
+          <div className="col-lg-8 contact-left">
             <h1>
               <span className="font-bold">That idea you have,</span>
               <br></br>
@@ -77,7 +77,7 @@ const Contact = () => {
             <a href="mailto:info@crocuspearl.com" className="sub-heading ">
               info@crocuspearl.com
             </a>
-            <div className="row socials d-md-block d-none">
+            <div className="row socials d-lg-block d-none">
               {/* find us */}
               <div className="col-md-4">
                 <b className="heading pt-3"> Find us</b>
@@ -125,8 +125,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 contact-right">
-            <h1 className="d-md-block d-none">Say hello</h1>
+          <div className="col-lg-4 contact-right">
+            <h1 className="d-lg-block d-none">Say hello</h1>
 
             <form
               ref={form}
@@ -175,7 +175,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="row socials d-md-none d-block">
+          <div className="row socials socials-sm d-lg-none d-block">
             {/* find us */}
             <div className="col-md-4">
               <b className="heading pt-3"> Find us</b>

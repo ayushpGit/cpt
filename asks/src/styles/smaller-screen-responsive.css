@@ -3,14 +3,17 @@
     font-size: 15px;
     overflow-x: hidden;
   }
-
+  .sub-heading {
+    font-size: 15px;
+  }
   /* nav */
   nav {
     height: 95px;
   }
   .nav-crocus {
-    padding: 20px 0px 0px 35px;
+    padding: 35px 0px 0px 35px;
     font-size: 25px;
+    line-height: 20px;
   }
   .nav-tech {
     font-size: 11px;
@@ -20,7 +23,7 @@
     margin: 0px 70px 0px 0px;
   }
   .ham-menu {
-    right: 0.8vw;
+    right: 0vw;
   }
   label[for="ham-menu"] {
     top: 37px;
@@ -64,5 +67,16 @@
   .contact-left h1 {
     font-size: 40px;
     line-height: 1.4;
+  }
+
+  /* works */
+  h1.heading.large {
+    font-size: 4rem !important;
+  }
+  h1.heading {
+    font-size: 25px !important;
+  }
+  .works-card-content {
+    padding: 40px;
   }
 }
