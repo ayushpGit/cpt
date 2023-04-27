@@ -9,6 +9,20 @@ const SubWorks = () => {
   const { data: work, error } = useFetch("http://167.235.247.244:8001/works/" + id);
 
   const images = [
+    // 6
+    
+    {
+      dbId: "6",
+      img: "2023_04_12_Mockup4_Silverlining",
+    },
+    {
+      dbId: "6",
+      img: "2023_04_12_Mockup2_Silverlining",
+    },
+    {
+      dbId: "6",
+      img: "2023_04_12_Mockup3_Silverlining",
+    },
     // 5
     {
       dbId: "5",
