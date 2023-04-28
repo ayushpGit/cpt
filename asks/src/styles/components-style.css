@@ -747,18 +747,21 @@ label a {
   opacity: 1;
 }
 
-form input:invalid:focus ~ label {
-  color: #f94f6d !important;
-}
-
-form input:invalid:focus {
+.input-field input:not(:placeholder-shown):invalid,
+.input-field textarea:not(:placeholder-shown):invalid {
   border-color: #f94f6d;
 }
 
-form input:valid:focus ~ label {
+.input-field input:not(:placeholder-shown):invalid ~ label,
+.input-field textarea:not(:placeholder-shown):invalid ~ label {
+  color: #f94f6d !important;
+}
+/* form input:valid ~ label,
+.input-field textarea:valid ~ label {
   color: #4ab382 !important;
 }
 
-form input:valid:focus {
-  border-color: #4ab382;
-}
+form input:valid,
+.input-field textarea:valid {
+  border-color: #4ab382 !important;
+} */

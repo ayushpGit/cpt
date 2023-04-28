@@ -78,8 +78,11 @@ section#top {
 }
 .input-field input:focus ~ .form-label,
 .input-field input:valid ~ .form-label,
+.input-field input:not(:placeholder-shown):invalid ~ .form-label,
 .input-field textarea:focus ~ .form-label,
-.input-field textarea:valid ~ .form-label {
+.input-field textarea:valid ~ .form-label,
+.input-field textarea:not(:placeholder-shown):invalid ~ .form-label
+{
   font-size: 14px;
   top: 5px;
   color: #111;

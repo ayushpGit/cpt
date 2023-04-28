@@ -136,13 +136,25 @@ const Contact = () => {
             >
               <div className="row">
                 <div className="input-field col-md-6">
-                  <input type="text" id="name" name="user_name" required />
+                  <input
+                    type="text"
+                    id="name"
+                    name="user_name"
+                    placeholder=" "
+                    required
+                  />
                   <label className="form-label" htmlFor="name">
                     Your name
                   </label>
                 </div>
                 <div className="input-field col-md-6">
-                  <input type="email" id="email" name="user_email" required />
+                  <input
+                    type="email"
+                    id="email"
+                    name="user_email"
+                    placeholder=" "
+                    required
+                  />
                   <label className="form-label" htmlFor="email">
                     Email
                   </label>
@@ -150,7 +162,13 @@ const Contact = () => {
               </div>
               <div className="row">
                 <div className="input-field col-12">
-                  <input type="text" id="subject" name="subject" required />
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder=" "
+                    required
+                  />
                   <label className="form-label" htmlFor="subject">
                     Subject
                   </label>
@@ -163,6 +181,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows="1"
+                    placeholder=" "
                     required
                   />
                   <label className="form-label" htmlFor="message">
