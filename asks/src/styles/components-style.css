@@ -353,12 +353,23 @@ label[for="ham-menu"] {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  background-color: black;
   top: 0;
   left: 0;
   z-index: -1;
   object-fit: cover;
   filter: grayscale(0.2) hue-rotate(200deg) blur(0.8px) brightness(0.3);
   /* opacity: 0.3;*/
+}
+
+.landing-background {
+  background-color: black;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* ---------------Services/Carousel--------------- */

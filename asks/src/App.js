@@ -1,9 +1,13 @@
 import "./App.css";
+
+// routes
 import AppRouting from "./utils/routing";
+
+// styles
 import "./styles/pages-style.css";
 import "./styles/components-style.css";
-import "./styles/mobile-responsive.css";
 import "./styles/smaller-screen-responsive.css";
+import "./styles/mobile-responsive.css";
 
 // fonts
 import "./assets/font/GraphikLight.otf";
