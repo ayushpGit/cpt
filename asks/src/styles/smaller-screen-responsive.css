@@ -84,3 +84,35 @@
     padding: 40px;
   }
 }
+
+@media only screen and (max-width: 1300px) {
+  .home-title {
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 600px) {
+  section#top {
+    min-height: 95vh;
+  }
+  .home-title {
+    margin-top: 30vh;
+  }
+  .slick-slide.slick-active.slick-center.slick-current
+    .carousel-div
+    .carousel-img {
+    height: 75vh;
+  }
+  .carousel-div .carousel-img {
+    height: 60vh;
+  }
+  .mission-div {
+    padding: 75vh 0 0 10vw;
+  }
+  .works-card {
+    height: 50vh !important;
+  }
+  .footer-div-top h1 {
+    font-size: 60px;
+  }
+}

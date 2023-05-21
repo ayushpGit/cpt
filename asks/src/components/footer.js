@@ -33,7 +33,7 @@ const footer = () => {
           </div>
           <a
             href="https://www.facebook.com/people/Crocus-Pearl-Technologies-Pvt-Ltd/100088528600904/?mibextid=ZbWKwL"
-            className="link-button col-md-1"
+            className="link-button col-md-2"
             target={"_blank"}
             rel={"noreferrer"}
           >
@@ -41,7 +41,7 @@ const footer = () => {
           </a>
           <a
             href="https://www.instagram.com/crocus.pearl/"
-            className="link-button col-md-2 text-md-center"
+            className="link-button col-md-2"
             target={"_blank"}
             rel={"noreferrer"}
           >
@@ -49,7 +49,7 @@ const footer = () => {
           </a>
           <a
             href="https://www.linkedin.com/company/crocus-pearl-technologies-pvt-ltd/mycompany/"
-            className="link-button col-md-1 text-right"
+            className="link-button col-md-2"
             target={"_blank"}
             rel={"noreferrer"}
           >
