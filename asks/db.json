@@ -1,22 +1,4 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-
   "works": [
     {
       "id": "6",
@@ -26,7 +8,7 @@
       "category": "print",
       "role": "brochure design\nprinting",
       "img": "KRI_20230405_silverlining",
-      "desc": "InVision Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.\n\nOur goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.\n\nAside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities. It was exciting to see how the product evolved and improved with each update during this short time.\n\nThe final deliverable was a family of 4 products that you can download and use for free. Just download InVision Studio, open their App Store and search for 128 Outline Icons, eCommerce Wireframe Kit, User Interface Kit and Web Wireframe Kit."
+      "desc": "We had the pleasure of working with Silver Lining, a data center and managed services provider that offers a full suite of cloud, data center, and disaster recovery products as well as managed services to the private and public sectors. As the designer and printer of their brochures, our primary goal was to create a marketing tool that effectively communicates Silver Lining's services and capabilities to their target audience.\nOur brochure design process involved understanding Silver Lining's brand and target audience, as well as their marketing goals. We worked closely with their team to create a design that showcases their services in a visually appealing and easy-to-understand way. Our team of designers utilized their expertise to create a design that incorporates Silver Lining's branding and imagery, creating a consistent and memorable experience for their customers.\nOnce the design was finalized, we moved on to the printing process. We utilized high-quality materials and printing techniques to produce brochures that are visually appealing and durable. Our team carefully monitored the printing process to ensure that the final product met Silver Lining's expectations and our high standards for quality.\nIn summary, our brochure design and printing service is a comprehensive solution that caters to businesses' marketing needs. We are proud to have worked with Silver Lining to create a brochure that effectively communicates their services and capabilities to their target audience. Contact us today to learn more about our services and how we can help you elevate your brand!"
     },
     {
       "id": "5",
