@@ -18,7 +18,7 @@ import SubWorks from "../pages/subWorks";
 import Contact from "../pages/contact";
 import NotFound from "../pages/notFound";
 
-import ToTop from "../components/usefuls/scrollToTop";
+import ToTop from "../utils/scrollToTop";
 
 const Routing = () => {
   const path = window.location.pathname;
