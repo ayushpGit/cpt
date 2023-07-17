@@ -5,30 +5,32 @@ import Cards from "../components/works/cards";
 import useFetch from "../utils/useFetch";
 
 const Works = () => {
-  const { data: workItems, error } = useFetch("http://167.235.247.244:8001/works");
+	const { data: workItems, error } = useFetch(
+		"https://cpt-web.ryuuzu.xyz/works"
+	);
 
-  return (
-    <>
-      <Nav />
-      <div className="container pt-5">
-        <p className="sub-heading">SELECTED PROJECTS</p>
-        <h1 className="heading large" style={{ fontSize: "6rem" }}>
-          Digital Portfolio
-        </h1>
+	return (
+		<>
+			<Nav />
+			<div className="container pt-5">
+				<p className="sub-heading">SELECTED PROJECTS</p>
+				<h1 className="heading large" style={{ fontSize: "6rem" }}>
+					Digital Portfolio
+				</h1>
 
-        {/* displaying work items but if theres an error it renders the error and if it is loading it renders loading */}
+				{/* displaying work items but if theres an error it renders the error and if it is loading it renders loading */}
 
-        {workItems ? (
-          <Cards workItems={workItems} />
-        ) : error ? (
-          <div>{error}</div>
-        ) : (
-          <p>Loading...</p>
-        )}
-      </div>
-      <Footer />
-    </>
-  );
+				{workItems ? (
+					<Cards workItems={workItems} />
+				) : error ? (
+					<div>{error}</div>
+				) : (
+					<p>Loading...</p>
+				)}
+			</div>
+			<Footer />
+		</>
+	);
 };
 
 export default Works;
