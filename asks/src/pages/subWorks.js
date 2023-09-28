@@ -8,7 +8,7 @@ const SubWorks = () => {
   const { id } = useParams();
   // const { data: work, error } = useFetch("http://localhost:8000/works/" + id);
   const { data: work, error } = useFetch(
-    "http://167.235.247.244:8001/works/" + id
+    "https://cpt-web.ryuuzu.xyz/works/" + id
   );
 
   const images = [
@@ -99,7 +99,7 @@ const SubWorks = () => {
     images.map(
       (image) => id === image.dbId && setReal((real) => [...real, image.img])
     );
-  });
+  }, []);
 
   return (
     <>
