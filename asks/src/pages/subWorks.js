@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import { useParams } from "react-router-dom";
-import useFetch from "../components/usefuls/useFetch";
+import useFetch from "../utils/useFetch";
 
 const SubWorks = () => {
   const { id } = useParams();
@@ -12,6 +12,20 @@ const SubWorks = () => {
   );
 
   const images = [
+    // 6
+
+    {
+      dbId: "6",
+      img: "2023_04_12_Mockup4_Silverlining",
+    },
+    {
+      dbId: "6",
+      img: "2023_04_12_Mockup2_Silverlining",
+    },
+    {
+      dbId: "6",
+      img: "2023_04_12_Mockup3_Silverlining",
+    },
     // 5
     {
       dbId: "5",

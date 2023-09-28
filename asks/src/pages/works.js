@@ -2,12 +2,12 @@ import React from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import Cards from "../components/works/cards";
-import useFetch from "../components/usefuls/useFetch";
+import useFetch from "../utils/useFetch";
 
 const Works = () => {
   // const { data: workItems, error } = useFetch("http://localhost:8000/works");
   const { data: workItems, error } = useFetch(
-    "http://167.235.247.244:8001/works"
+    "https://cpt-web.ryuuzu.xyz/works"
   );
 
   return (

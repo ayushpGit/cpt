@@ -67,8 +67,8 @@ const Contact = () => {
       />
       <Nav />
       <div className="container">
-        <div className="contact-spacing">
-          <div className="col-lg-8 col-md-6 contact-left">
+        <div className="contact-spacing row">
+          <div className="col-lg-8 contact-left">
             <h1>
               <span className="font-bold">That idea you have,</span>
               <br></br>
@@ -77,7 +77,7 @@ const Contact = () => {
             <a href="mailto:info@crocuspearl.com" className="sub-heading ">
               info@crocuspearl.com
             </a>
-            <div className="row socials d-md-block d-none">
+            <div className="row socials d-lg-block d-none">
               {/* find us */}
               <div className="col-md-4">
                 <b className="heading pt-3"> Find us</b>
@@ -125,8 +125,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 contact-right">
-            <h1 className="d-md-block d-none">Say hello</h1>
+          <div className="col-lg-4 contact-right">
+            <h1 className="d-lg-block d-none">Say hello</h1>
 
             <form
               ref={form}
@@ -136,13 +136,25 @@ const Contact = () => {
             >
               <div className="row">
                 <div className="input-field col-md-6">
-                  <input type="text" id="name" name="user_name" required />
+                  <input
+                    type="text"
+                    id="name"
+                    name="user_name"
+                    placeholder=" "
+                    required
+                  />
                   <label className="form-label" htmlFor="name">
                     Your name
                   </label>
                 </div>
                 <div className="input-field col-md-6">
-                  <input type="email" id="email" name="user_email" required />
+                  <input
+                    type="email"
+                    id="email"
+                    name="user_email"
+                    placeholder=" "
+                    required
+                  />
                   <label className="form-label" htmlFor="email">
                     Email
                   </label>
@@ -150,7 +162,13 @@ const Contact = () => {
               </div>
               <div className="row">
                 <div className="input-field col-12">
-                  <input type="text" id="subject" name="subject" required />
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder=" "
+                    required
+                  />
                   <label className="form-label" htmlFor="subject">
                     Subject
                   </label>
@@ -163,6 +181,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows="1"
+                    placeholder=" "
                     required
                   />
                   <label className="form-label" htmlFor="message">
@@ -175,7 +194,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="row socials d-md-none d-block">
+          <div className="row socials socials-sm d-lg-none d-block">
             {/* find us */}
             <div className="col-md-4">
               <b className="heading pt-3"> Find us</b>

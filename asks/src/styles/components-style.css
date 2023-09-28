@@ -198,11 +198,6 @@ label[for="ham-menu"] {
   transform: translate(0px);
   visibility: visible;
 }
-#ham-menu:checked ~ div.full-page-green {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
 [for="ham-menu"] > div {
   width: 100%;
   height: 100%;
@@ -358,12 +353,23 @@ label[for="ham-menu"] {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  background-color: black;
   top: 0;
   left: 0;
   z-index: -1;
   object-fit: cover;
   filter: grayscale(0.2) hue-rotate(200deg) blur(0.8px) brightness(0.3);
   /* opacity: 0.3;*/
+}
+
+.landing-background {
+  background-color: black;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* ---------------Services/Carousel--------------- */
@@ -442,7 +448,7 @@ label[for="ham-menu"] {
 
 #mission .bgimg {
   width: 100%;
-  height: 100vh !important;
+  height: 104vh !important;
   position: absolute;
   z-index: -1;
   object-fit: cover;
@@ -452,7 +458,7 @@ label[for="ham-menu"] {
 .mission-div {
   padding: 60vh 0 0 10vw;
   color: #eee;
-  height: 100vh;
+  height: 104vh;
 }
 
 .mission-div h2 {
@@ -494,7 +500,7 @@ label[for="ham-menu"] {
   z-index: 10;
   padding: 45px 52px 0px 0px;
   width: 100vw;
-  height: 100vh;
+  height: 104vh;
   /* transition: background-color 5s ease-in-out;
   -webkit-transition: background-color 5s ease-in-out; */
 }
@@ -752,18 +758,21 @@ label a {
   opacity: 1;
 }
 
-form input:invalid:focus ~ label {
-  color: #f94f6d !important;
-}
-
-form input:invalid:focus {
+.input-field input:not(:placeholder-shown):invalid,
+.input-field textarea:not(:placeholder-shown):invalid {
   border-color: #f94f6d;
 }
 
-form input:valid:focus ~ label {
+.input-field input:not(:placeholder-shown):invalid ~ label,
+.input-field textarea:not(:placeholder-shown):invalid ~ label {
+  color: #f94f6d !important;
+}
+/* form input:valid ~ label,
+.input-field textarea:valid ~ label {
   color: #4ab382 !important;
 }
 
-form input:valid:focus {
-  border-color: #4ab382;
-}
+form input:valid,
+.input-field textarea:valid {
+  border-color: #4ab382 !important;
+} */

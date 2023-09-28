@@ -12,6 +12,7 @@ const landing = () => {
         autoPlay={true}
         loop
       ></video>
+      <div className="landing-background"/>
       <span className="home-title">
         empower
         <br />

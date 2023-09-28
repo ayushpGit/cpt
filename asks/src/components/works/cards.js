@@ -15,7 +15,7 @@ const Cards = ({ workItems }) => {
             />
             <div className="works-card-content">
               <p className="sub-heading">{workItem.date}</p>
-              <h1 className="heading mt-3">
+              <h1 className="heading capital mt-3">
                 {workItem.title} - {workItem.titleDesc}
               </h1>
               <p className="works-card-learn sub-heading mt-4">
