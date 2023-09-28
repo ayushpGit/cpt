@@ -88,7 +88,7 @@ const Routing = () => {
   };
   return (
     <Router>
-      <ToTop/>
+      <ToTop />
       {/* body: */}
       <div className="body">
         {/* cursor */}

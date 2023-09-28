@@ -6,7 +6,10 @@ import useFetch from "../components/usefuls/useFetch";
 
 const SubWorks = () => {
   const { id } = useParams();
-  const { data: work, error } = useFetch("http://167.235.247.244:8001/works/" + id);
+  // const { data: work, error } = useFetch("http://localhost:8000/works/" + id);
+  const { data: work, error } = useFetch(
+    "http://167.235.247.244:8001/works/" + id
+  );
 
   const images = [
     // 5
@@ -74,17 +77,15 @@ const SubWorks = () => {
       dbId: "1",
       img: "2023_04_12_Mockup3_MobileMyFit",
     },
-
   ];
+
   const [real, setReal] = useState([]);
 
   useEffect(() => {
-    images.map((image) =>
-      id === image.dbId
-        ? setReal((real) => [...real, image.img])
-        : console.log("wow")
+    images.map(
+      (image) => id === image.dbId && setReal((real) => [...real, image.img])
     );
-  }, []);
+  });
 
   return (
     <>
