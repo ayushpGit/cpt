@@ -5,10 +5,10 @@ import Cards from "../components/works/cards";
 import useFetch from "../utils/useFetch";
 
 const Works = () => {
-  // const { data: workItems, error } = useFetch("http://localhost:8000/works");
-  const { data: workItems, error } = useFetch(
-    "https://cpt-web.ryuuzu.xyz/works"
-  );
+  const { data: workItems, error } = useFetch("http://localhost:8001/works");
+  // const { data: workItems, error } = useFetch(
+  //   "https://cpt-web.ryuuzu.xyz/works"
+  // );
 
   return (
     <>

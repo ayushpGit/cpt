@@ -6,100 +6,113 @@ import useFetch from "../utils/useFetch";
 
 const SubWorks = () => {
   const { id } = useParams();
-  // const { data: work, error } = useFetch("http://localhost:8000/works/" + id);
-  const { data: work, error } = useFetch(
-    "https://cpt-web.ryuuzu.xyz/works/" + id
-  );
+  const { data: work, error } = useFetch("http://localhost:8001/works/" + id);
+  // const { data: work, error } = useFetch(
+  //   "https://cpt-web.ryuuzu.xyz/works/" + id
+  // );
 
-  const images = [
-    // 6
-
-    {
-      dbId: "6",
-      img: "2023_04_12_Mockup4_Silverlining",
-    },
-    {
-      dbId: "6",
-      img: "2023_04_12_Mockup2_Silverlining",
-    },
-    {
-      dbId: "6",
-      img: "2023_04_12_Mockup3_Silverlining",
-    },
-    // 5
-    {
-      dbId: "5",
-      img: "2023_04_12_Mockup1_Hivelaya",
-    },
-    {
-      dbId: "5",
-      img: "2023_04_12_Mockup2_Hivelaya",
-    },
-    {
-      dbId: "5",
-      img: "2023_04_12_Mockup3_Hivelaya",
-    },
-    // 4
-    {
-      dbId: "4",
-      img: "2023_04_12_Mockup1_BetterthanhotelLaptop",
-    },
-    {
-      dbId: "4",
-      img: "2023_04_12_Mockup2_BetterthanhotelLaptop",
-    },
-    {
-      dbId: "4",
-      img: "2023_04_12_Mockup3_BetterthanhotelLaptop",
-    },
-    // 3
-    {
-      dbId: "3",
-      img: "2023_04_12_Mockup1_MobileBetterthanhotel",
-    },
-    {
-      dbId: "3",
-      img: "2023_04_12_Mockup2_MobileBetterthanhotel",
-    },
-    {
-      dbId: "3",
-      img: "2023_04_12_Mockup3_MobileBetterthanhotel",
-    },
-    // 2
-    {
-      dbId: "2",
-      img: "2023_04_12_Mockup1_MobileLearnNewar",
-    },
-    {
-      dbId: "2",
-      img: "2023_04_12_Mockup2_MobileLearnNewar",
-    },
-    {
-      dbId: "2",
-      img: "2023_04_12_Mockup3_MobileLearnNewar",
-    },
-    // 1
-    {
-      dbId: "1",
-      img: "2023_04_12_Mockup1_MobileMyFit",
-    },
-    {
-      dbId: "1",
-      img: "2023_04_12_Mockup2_MobileMyFit",
-    },
-    {
-      dbId: "1",
-      img: "2023_04_12_Mockup3_MobileMyFit",
-    },
-  ];
+  // const images = [
+  //   // 7
+  //   {
+  //     dbId: "7",
+  //     img: "2023_09_21_Trisara.0 mockup_1",
+  //   },
+  //   {
+  //     dbId: "7",
+  //     img: "2023_09_27_Trisara_MockupPerosPizza",
+  //   },
+  //   // 6
+  //   {
+  //     dbId: "6",
+  //     img: "2023_04_12_Mockup4_Silverlining",
+  //   },
+  //   {
+  //     dbId: "6",
+  //     img: "2023_04_12_Mockup2_Silverlining",
+  //   },
+  //   {
+  //     dbId: "6",
+  //     img: "2023_04_12_Mockup3_Silverlining",
+  //   },
+  //   // 5
+  //   {
+  //     dbId: "5",
+  //     img: "2023_04_12_Mockup1_Hivelaya",
+  //   },
+  //   {
+  //     dbId: "5",
+  //     img: "2023_04_12_Mockup2_Hivelaya",
+  //   },
+  //   {
+  //     dbId: "5",
+  //     img: "2023_04_12_Mockup3_Hivelaya",
+  //   },
+  //   // 4
+  //   {
+  //     dbId: "4",
+  //     img: "2023_04_12_Mockup1_BetterthanhotelLaptop",
+  //   },
+  //   {
+  //     dbId: "4",
+  //     img: "2023_04_12_Mockup2_BetterthanhotelLaptop",
+  //   },
+  //   {
+  //     dbId: "4",
+  //     img: "2023_04_12_Mockup3_BetterthanhotelLaptop",
+  //   },
+  //   // 3
+  //   {
+  //     dbId: "3",
+  //     img: "2023_04_12_Mockup1_MobileBetterthanhotel",
+  //   },
+  //   {
+  //     dbId: "3",
+  //     img: "2023_04_12_Mockup2_MobileBetterthanhotel",
+  //   },
+  //   {
+  //     dbId: "3",
+  //     img: "2023_04_12_Mockup3_MobileBetterthanhotel",
+  //   },
+  //   // 2
+  //   {
+  //     dbId: "2",
+  //     img: "2023_04_12_Mockup1_MobileLearnNewar",
+  //   },
+  //   {
+  //     dbId: "2",
+  //     img: "2023_04_12_Mockup2_MobileLearnNewar",
+  //   },
+  //   {
+  //     dbId: "2",
+  //     img: "2023_04_12_Mockup3_MobileLearnNewar",
+  //   },
+  //   // 1
+  //   {
+  //     dbId: "1",
+  //     img: "2023_04_12_Mockup1_MobileMyFit",
+  //   },
+  //   {
+  //     dbId: "1",
+  //     img: "2023_04_12_Mockup2_MobileMyFit",
+  //   },
+  //   {
+  //     dbId: "1",
+  //     img: "2023_04_12_Mockup3_MobileMyFit",
+  //   },
+  // ];
 
   const [real, setReal] = useState([]);
-
+  const [images, setimages] = useState("");
+  setimages(JSON.parse(work?.gallery));
+  
   useEffect(() => {
     images.map(
       (image) => id === image.dbId && setReal((real) => [...real, image.img])
     );
   }, []);
+
+  // const real = JSON.parse(work?.gallery);
+  console.log(work?.gallery);
 
   return (
     <>
@@ -149,13 +162,14 @@ const SubWorks = () => {
                 alt=""
               />
               {/* images from the data dictionary */}
-              {real.map((image) => (
+              {/* {real.map((image) => (
                 <img
                   className="subworks-img"
                   src={require(`../assets/images/${image}.jpg`)}
-                  alt=""
+                  alt="mockup"
                 />
-              ))}
+              ))} */}
+
               {/* {images.map((image) => (
                 {(images.id)===id ?
                 <img
