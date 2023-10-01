@@ -102,17 +102,17 @@ const SubWorks = () => {
   // ];
 
   const [real, setReal] = useState([]);
-  const [images, setimages] = useState("");
-  setimages(JSON.parse(work?.gallery));
-  
+  const [images, setImages] = useState([]);
+
   useEffect(() => {
-    images.map(
-      (image) => id === image.dbId && setReal((real) => [...real, image.img])
-    );
-  }, []);
+    {
+      work?.gallery && setImages(JSON.parse(work.gallery));
+    }
+  }, [work?.gallery]);
 
   // const real = JSON.parse(work?.gallery);
   console.log(work?.gallery);
+  console.log(images);
 
   return (
     <>
@@ -162,13 +162,14 @@ const SubWorks = () => {
                 alt=""
               />
               {/* images from the data dictionary */}
-              {/* {real.map((image) => (
+              {images.map((image) => (
                 <img
+                  key={image}
                   className="subworks-img"
                   src={require(`../assets/images/${image}.jpg`)}
                   alt="mockup"
                 />
-              ))} */}
+              ))}
 
               {/* {images.map((image) => (
                 {(images.id)===id ?
