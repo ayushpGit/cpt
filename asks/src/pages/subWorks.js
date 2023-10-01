@@ -11,7 +11,6 @@ const SubWorks = () => {
   //   "https://cpt-web.ryuuzu.xyz/works/" + id
   // );
 
-
   const [real, setReal] = useState([]);
   const [images, setImages] = useState([]);
 
@@ -20,10 +19,6 @@ const SubWorks = () => {
       work?.gallery && setImages(JSON.parse(work.gallery));
     }
   }, [work?.gallery]);
-
-  // const real = JSON.parse(work?.gallery);
-  console.log(work?.gallery);
-  console.log(images);
 
   return (
     <>
