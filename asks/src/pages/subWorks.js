@@ -14,7 +14,7 @@ const SubWorks = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    work?.gallery && setImages(JSON.parse(work.gallery));
+    work?.gallery && setImages(work.gallery);
   }, [work?.gallery]);
 
   return (
