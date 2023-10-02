@@ -11,13 +11,10 @@ const SubWorks = () => {
   //   "https://cpt-web.ryuuzu.xyz/works/" + id
   // );
 
-  const [real, setReal] = useState([]);
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    {
-      work?.gallery && setImages(JSON.parse(work.gallery));
-    }
+    work?.gallery && setImages(JSON.parse(work.gallery));
   }, [work?.gallery]);
 
   return (
@@ -76,16 +73,6 @@ const SubWorks = () => {
                   alt="mockup"
                 />
               ))}
-
-              {/* {images.map((image) => (
-                {(images.id)===id ?
-                <img
-                  className="subworks-img"
-                  src={require(`../assets/images/${image.img}.jpg`)}
-                  alt=""
-                />:"wow"
-              }
-              ))} */}
             </div>
           </div>
         </div>
