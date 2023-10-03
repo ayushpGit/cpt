@@ -6,10 +6,10 @@ import useFetch from "../utils/useFetch";
 
 const SubWorks = () => {
   const { id } = useParams();
-  const { data: work, error } = useFetch("http://localhost:8001/works/" + id);
-  // const { data: work, error } = useFetch(
-  //   "https://cpt-web.ryuuzu.xyz/works/" + id
-  // );
+  // const { data: work, error } = useFetch("http://localhost:8001/works/" + id);
+  const { data: work, error } = useFetch(
+    "https://cpt-web.ryuuzu.xyz/works/" + id
+  );
 
   const [images, setImages] = useState([]);
 
