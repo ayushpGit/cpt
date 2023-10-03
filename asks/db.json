@@ -1,6 +1,22 @@
 {
   "works": [
     {
+      "id": "8",
+      "date": "2023",
+      "title": "Instaline",
+      "titleDesc": "UI/UX Designing",
+      "category": "design",
+      "role": "UI/UX designing\ndesign concepts\nMobile Design",
+      "img": "KRI_20231003_instaline",
+      "gallery": [
+        "2023_03_10_Instaline_Mockup1",
+        "2023_03_10_Instaline_Mockup2",
+        "2023_10_03_Instaline_Mockup3",
+        "2023_10_03_Instaline_Mockup4"
+      ],
+      "desc": "Crocus Pearl Technologies partnered with Trisara Nepal, a renowned hospitality brand in Nepal, to elevate their online presence through a website. The main objectives were to emphasize their multiple locations, introduce features like event notifications, online booking, QR code menus, and showcase their achievements and community involvement.\n\nWe crafted a user-friendly website that allowed visitors to easily explore Trisara Nepal's various locations, immersing them in each restaurant's unique ambiance through stunning photo galleries. \"Event Pops\" notifications engaged users with upcoming events and promotions, enhancing their browsing experience and increasing event participation and bookings.\n\nSeamless online booking was achieved by integrating an efficient reservation system, simplifying the process and boosting conversion rates. Additionally, a QR code menu enhanced the dining experience, offering interactive menus with enticing dishes, descriptions, and images, while reducing paper usage.\n\nA dedicated section highlighted Trisara Nepal's achievements and community contributions, reinforcing their commitment to sustainability and community engagement. The revamped website significantly improved online visibility, engagement, and bookings, solidifying Trisara Nepal's position as a top dining and hospitality brand in Nepal."
+    },
+    {
       "id": "7",
       "date": "2023",
       "title": "Trisara",
