@@ -4,7 +4,7 @@
 			"name": "json-server-app",
 			"script": "npx",
 			"interpreter": "none",
-			"args": "json-server --watch db.json"
+			"args": "json-server --host 167.235.247.244 --port 8001 --watch db.json"
 		}
 	]
 }
